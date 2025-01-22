@@ -1,0 +1,33 @@
+/* Font Face Definitions */
+
+/* Weight Bold */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Weight SemiBold */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-SemiBold.ttf") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Weight Medium */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Weight Regular */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

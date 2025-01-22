@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Need help moving to Chile? Our team of experts can assist you with home searches, school searches, visas, immigration, and temporary accommodation. Learn more about our services.">
+    <link rel="icon" type="image/png" href="../assets/images/symbol.png" />
+    <link href="../styles/output.css" rel="stylesheet" />
+    <link href="../styles/global.css" rel="stylesheet" />
+    <link href="../styles/custom.css" rel="stylesheet" />
+    <title>Expat.cl: Take Quiz</title>
+</head>
+
+<body class="flex flex-col justify-between min-h-screen">
+    <header class="flex flex-col border-b-4 border-[#F2F5F6]">
+        <!-- Top bar with marquee -->
+        <div class="SFPro_font bg-primaryColor text-white text-xs font-normal uppercase marquee-container">
+            <div class="animate-marquee gap-8 justify-around">
+                <!-- Marquee item: Temporary Accommodation -->
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="../assets/icons/forHeader/temporary.svg" alt="Temporary Accommodation Icon" />
+                    <h3>Temporary Accommodation</h3>
+                </div>
+                <!-- Marquee item: Get responses in 24hrs -->
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="../assets/icons/forHeader/response.svg" alt="Get Responses Icon" />
+                    <h3>Get responses in 24hrs</h3>
+                </div>
+                <!-- Marquee item: Expat Support -->
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="../assets/icons/forHeader/support.svg" alt="Expat Support Icon" />
+                    <h3>Expat Support</h3>
+                </div>
+                <!-- Marquee item: Tailor-Made -->
+                <div class="marquee-item flex items-center gap-1">
+                    <img src="../assets/icons/forHeader/tailor.svg" alt="Tailor-Made Icon" />
+                    <h3>Tailor-Made</h3>
+                </div>
+
+                <!-- Repeat content for seamless loop on small screens -->
+                <span class="flex gap-8 sm:hidden">
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="../assets/icons/forHeader/temporary.svg" alt="Temporary Accommodation Icon" />
+                        <h3>Temporary Accommodation</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="../assets/icons/forHeader/response.svg" alt="Get Responses Icon" />
+                        <h3>Get responses in 24hrs</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="../assets/icons/forHeader/support.svg" alt="Expat Support Icon" />
+                        <h3>Expat Support</h3>
+                    </div>
+                    <div class="marquee-item flex items-center gap-1">
+                        <img src="../assets/icons/forHeader/tailor.svg" alt="Tailor-Made Icon" />
+                        <h3>Tailor-Made</h3>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!-- Main header & navigation -->
+        <div class="flex sm:flex-col gap-5 justify-between items-center p-3 vsm:p-5">
+            <!-- Company Logo -->
+            <a href="/">
+                <img src="../assets/images/Logo.png" alt="Company Logo" class="w-24 vsm:w-auto" />
+            </a>
+
+            <!-- Rated Bar -->
+            <div
+                class="flex flex-wrap flex-col items-end vsm:items-center vsm:flex-row tiny:flex-nowrap gap-1 sm:gap-2 text-left text-sm vsm:text-base">
+                <img src="../assets/icons/forHeroSection/stars.svg" alt="Rating Stars Icon"
+                    class="w-[88px] vsm:w-auto" />
+                <h2 class="sm:hidden text-xs font-normal sm:text-base w-fit">
+                    Rated <strong>Excellent</strong> (4.7/5)
+                </h2>
+                <span class="hidden sm:flex flex-wrap flex-row gap-1 items-start text-xs tiny:text-sm vsm:text-base">
+                    Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
+                    <span class="flex gap-1 items-center font-bold">
+                        <img src="../assets/icons/forHeroSection/bigStar.svg" alt="Icon" class="w-[17px] vsm:w-auto" />
+                        Trustpilot
+                    </span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="SFPro_font relative flex items-center justify-center pt-10 sm:pt-24 overflow-hidden">
+        <!-- Background Pattern -->
+        <img src="../assets/images/patterns/pattern3.png" alt="pattern"
+            class="absolute right-0 top-0 opacity-30 lg:opacity-100 -z-20" />
+        <div class="w-full">
+            <!-- Head Title Change with number of step -->
+            <div class="text-center mb-6">
+                <p id="stepText" class="text-lg font-medium text-primaryColor/75">First up, let’s get to know you!</p>
+            </div>
+
+            <!-- Step Indicator -->
+            <div class="flex items-center justify-center mb-4">
+                <div class="flex items-center step-indicator text-white">
+                    <!-- Step 1 -->
+                    <div id="indicator-1"
+                        class="w-8 h-8 flex items-center justify-center bg-blue-500 font-bold step-indicator-current">1
+                    </div>
+                    <!-- Connector -->
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <!-- Step 2 -->
+                    <div id="indicator-2" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">2
+                    </div>
+                    <!-- Connector -->
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <!-- Step 3 -->
+                    <div id="indicator-3" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">3
+                    </div>
+                    <!-- Connector -->
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <!-- Step 4 -->
+                    <div id="indicator-4" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">4
+                    </div>
+                    <!-- Connector -->
+                    <div class="w-4 tiny:w-8 sm:w-12 h-1 bg-[#D4DCE4] mx-1"></div>
+                    <!-- Step 5 -->
+                    <div id="indicator-5" class="w-8 h-8 flex items-center justify-center bg-[#D4DCE4] font-bold">5
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Form -->
+            <form id="multiStepForm">
+                <!-- Step 1: Contact Details -->
+                <section id="step-1" class="step active max-w-[915px] px-5 mx-auto">
+                    <h2
+                        class="text-xl tiny:text-2xl sm:text-[44px] font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        A few details to contact you
+                    </h2>
+                    <div class="space-y-4 z-50 max-w-[600px] mx-auto">
+                        <!-- Input fields for first and last name -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" id="firstName" placeholder="Enter your first name"
+                                class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                                required>
+                            <input type="text" id="lastName" placeholder="Enter your last name"
+                                class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                                required>
+                        </div>
+                        <!-- Input field for email address -->
+                        <input type="email" id="email" placeholder="Enter your email address"
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                        <!-- Input fields for phone number with country code -->
+                        <div class="flex items-center">
+                            <select id="countryCode"
+                                class="px-3 h-[56px] text-tertiaryColor bg-tertiaryColor/20 border-2 border-tertiaryColor/30 border-r-0 focus:outline-none special z-50">
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+20</option>
+                            </select>
+                            <input type="tel" id="phone" placeholder="(201) 555-0123"
+                                class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 border-l-0 px-4 h-[56px] focus:outline-none special z-50"
+                                required>
+                        </div>
+                    </div>
+                    <!-- Error message for step 1 -->
+                    <div class="error-message max-w-[600px] mx-auto" id="error-step-1">Please fill out all fields
+                        correctly.</div>
+                </section>
+
+                <!-- Step 2: Visa Options -->
+                <section id="step-2" class="step px-5 mx-auto max-w-[915px]">
+                    <h2
+                        class="text-xl tiny:text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        What is the best Chilean visa for you?
+                    </h2>
+                    <div class="space-y-4 max-w-[600px] mx-auto">
+                        <!-- Radio options for visa types -->
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-2 vsm:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option1" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option1">Visit
+                                    the country as a
+                                    tourist</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option2" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option2">Business / short-term
+                                    mission</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option3" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option3">Work / Create a
+                                    company</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option4" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option4">Invest in Chile</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option5" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option5">Study /
+                                    Internship</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option6" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option6">Retire in Chile</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option7" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option7">Seek asylum</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option8" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option8">Live with family already
+                                    in Chile</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option9" name="options" value="option1">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option9">Relocate to obtain
+                                    citizenship</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-1 tiny:px-4 h-16 vsm:h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option10" name="options" value="option2">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option10">I
+                                    don't have clear plans
+                                    yet</label>
+                            </div>
+                        </div>
+                        <!-- Custom option input field -->
+                        <div
+                            class="custom-radio-group flex text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special">
+                            <input type="radio" class="custom-radio" id="customOption" name="options" value="custom">
+                            <label for="customOption" class="custom-radio-label"></label>
+                            <input type="text" id="customInput" placeholder="Enter your option here"
+                                class="w-full text-tertiaryColor bg-transparent px-4 h-[56px] focus:outline-none special"
+                                disabled>
+                        </div>
+                    </div>
+                    <!-- Error message for step 2 -->
+                    <div class="error-message max-w-[600px] mx-auto" id="error-step-2">Please select an option or enter
+                        a custom option.</div>
+                </section>
+
+                <!-- Step 3: Move Planning -->
+                <section id="step-3" class="step px-5">
+                    <h2
+                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        When is your move to Chile planned?
+                    </h2>
+                    <div class="space-y-4 max-w-[600px] mx-auto">
+                        <!-- Radio options for move timing -->
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option11" name="move-timing"
+                                    value="already-in-chile">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option11">I
+                                    am already in
+                                    Chile</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option12" name="move-timing"
+                                    value="less-than-3-months">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option12">Less than 3
+                                    months</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option13" name="move-timing"
+                                    value="3-to-6-months">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option13">3
+                                    to 6 months</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option14" name="move-timing"
+                                    value="6-to-12-months">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option14">6
+                                    to 12 months</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option15" name="move-timing"
+                                    value="more-than-12-months">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option15">More than 12
+                                    months</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option16" name="move-timing"
+                                    value="dont-know-yet">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option16">I
+                                    don't know yet</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Error message for step 3 -->
+                    <div class="error-message max-w-[600px] mx-auto" id="error-step-3">Please select a choice and fill
+                        out all additional
+                        fields.</div>
+
+                    <h2
+                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        Savings / Income
+                    </h2>
+
+                    <h3 class="font-medium sm:text-xl text-primaryColor text-center py-2 max-w-[600px] mx-auto">
+                        You need to have savings / recurring income to obtain some visas for Chile. Reply to the
+                        following questions, so
+                        we can list all the visas you can pretend to.
+                    </h3>
+
+                    <div class="space-y-4 my-5 tiny:my-10 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">Do you have savings/assets?</h3>
+                        <!-- Radio options for savings/assets -->
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option72" name="savings-assets"
+                                    value="real-estate">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option72">Real Estate</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option78" name="savings-assets"
+                                    value="cash-savings">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option78">Cash / Savings</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option79" name="savings-assets"
+                                    value="financial-investments">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option79">Financial
+                                    Investments</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option70" name="savings-assets"
+                                    value="other">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option70">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">What is the total of your savings/assets
+                            (in
+                            US dollars)?</h3>
+                        <!-- Input field for total savings/assets -->
+                        <input type="number" id="num2" placeholder="Indicate an estimate of the total amount."
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                    </div>
+
+                    <div class="space-y-4 my-10 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">Do you have a recurring income?</h3>
+                        <!-- Radio options for recurring income -->
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option82" name="recurring-income"
+                                    value="pension">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option82">Pension</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option88" name="recurring-income"
+                                    value="freelance-income">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option88">Freelance income</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option89" name="recurring-income"
+                                    value="real-estate-rentals">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option89">Real Estate
+                                    Rentals</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option820" name="recurring-income"
+                                    value="dividends">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option820">Dividends</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">What is your average monthly income (in US
+                            dollars)?</h3>
+                        <!-- Input field for average monthly income -->
+                        <input type="number" id="num3" placeholder="Indicate an estimate of the total amount."
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                    </div>
+                </section>
+
+                <!-- Step 4: Visa Questions -->
+                <section id="step-4" class="step px-5">
+                    <h2
+                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        A few questions about your visa
+                    </h2>
+
+                    <h3 class="font-medium sm:text-xl text-primaryColor py-2 max-w-[600px] mx-auto">What is your
+                        citizenship?</h3>
+                    <div class="relative max-w-[600px] mx-auto">
+                        <!-- Select dropdown for citizenship selection -->
+                        <select id="dropdownSelect"
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] text-left flex items-center justify-between focus:outline-none appearance-none">
+                            <option>Select an option</option>
+                            <option>Afghanistan</option>
+                            <option>Albania</option>
+                            <option>Algeria</option>
+                            <option>Andorra</option>
+                            <option>Angola</option>
+                            <option>Argentina</option>
+                            <option>Armenia</option>
+                            <option>Australia</option>
+                            <option>Austria</option>
+                            <option>Azerbaijan</option>
+                            <option>Bahamas</option>
+                            <option>Bahrain</option>
+                            <option>Bangladesh</option>
+                            <option>Barbados</option>
+                            <option>Belarus</option>
+                            <option>Belgium</option>
+                            <option>Belize</option>
+                            <option>Benin</option>
+                            <option>Bhutan</option>
+                            <option>Bolivia</option>
+                        </select>
+
+                        <svg class="w-4 h-4 absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <div class="space-y-4 my-10 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">Who is coming with you to Chile?</h3>
+                        <!-- Radio options for travel companions -->
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option22" name="companions" value="me">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option22">Me</label>
+                            </div>
+                            <div
+                                class="flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option28" name="companions"
+                                    value="partner">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option28">My
+                                    partner</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-row justify-between sm:gap-5 gap-2">
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option29" name="companions"
+                                    value="children">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option29">My
+                                    children</label>
+                            </div>
+                            <div
+                                class="custom-radio-group flex justify-start items-center tiny:gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                                <input type="radio" class="custom-radio" id="option120" name="companions"
+                                    value="parents">
+                                <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                    for="option120">My parents</label>
+                            </div>
+                        </div>
+                        <div
+                            class="custom-radio-group flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] w-full hover:bg-tertiaryColor/30 cursor-pointer">
+                            <input type="radio" class="custom-radio" id="option220" name="companions"
+                                value="other-family">
+                            <label class="cursor-pointer custom-radio-label text-[8px] leading-none vsm:text-base"
+                                for="option220">Other
+                                family
+                                members</label>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 max-w-[600px] mx-auto">
+                        <h3 class="font-medium sm:text-xl text-primaryColor">How many persons need assistance with their
+                            visa?</h3>
+                        <!-- Input field for number of persons needing visa assistance -->
+                        <input type="number" id="num" placeholder="Indicate the total number, you included"
+                            class="w-full text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] focus:outline-none special z-50"
+                            required>
+                    </div>
+
+                    <!-- Error message for step 4 -->
+                    <div class="error-message max-w-[600px] mx-auto" id="error-step-4">Please select your nationality.
+                    </div>
+                </section>
+
+                <!-- Step 5: Final Question -->
+                <section id="step-5" class="step px-5 max-w-[660px] mx-auto">
+                    <h2
+                        class="text-2xl sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                        The last question!
+                    </h2>
+                    <h3 class="font-medium sm:text-xl text-center text-primaryColor/75">
+                        You are almost done.
+                    </h3>
+                    <h3
+                        class="font-medium text-sm vsm:text-base sm:text-xl mx-auto text-center max-w-[600px] text-primaryColor/75">
+                        Let us know if you are interested in visa support. These are paid services, totally optional of
+                        course, but that
+                        help relocate stress-free.
+                    </h3>
+                    <div class="sm:space-y-4 my-5 tiny:my-10">
+                        <h3 class="font-medium sm:text-xl text-center text-primaryColor">Are you interested in visa
+                            support?</h3>
+                        <div class="flex justify-center flex-wrap sm:gap-5">
+                            <!-- Radio option: No, thanks -->
+                            <div class="sm:flex w-full justify-between sm:gap-5 gap-2">
+                                <div
+                                    class="flex w-full sm:max-w-[320px] mb-[10px] sm:mb-0 justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option52" name="visa-support"
+                                        value="no-thanks">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option52">No, thanks.</label>
+                                </div>
+                                <!-- Radio option: Plan to do it on my own -->
+                                <div
+                                    class="flex w-full sm:max-w-[320px] mb-[10px] sm:mb-0 justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option58" name="visa-support"
+                                        value="do-it-own">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option58">I
+                                        plan to do it on my
+                                        own but...</label>
+                                </div>
+                            </div>
+                            <!-- Radio option: Talk to a specialist -->
+                            <div class="sm:flex w-full justify-between sm:gap-5 gap-2">
+                                <div
+                                    class="custom-radio-group mb-[10px] sm:mb-0 w-full sm:max-w-[320px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option59" name="visa-support"
+                                        value="talk-specialist">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option59">Yes, talk to a
+                                        specialist.</label>
+                                </div>
+                                <!-- Radio option: Full visa support -->
+                                <div
+                                    class="custom-radio-group w-full mb-[10px] sm:mb-0 sm:max-w-[320px] flex justify-start items-center gap-2 text-tertiaryColor bg-tertiaryColor/10 border-2 border-tertiaryColor/30 px-4 h-[56px] hover:bg-tertiaryColor/30 cursor-pointer">
+                                    <input type="radio" class="custom-radio" id="option50" name="visa-support"
+                                        value="full-support">
+                                    <label class="cursor-pointer custom-radio-label text-xs vsm:text-base"
+                                        for="option50">Yes, full visa support
+                                        would be
+                                        good.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Error message for step 5 -->
+                    <div class="error-message max-w-[600px] mx-auto" id="error-step-5">Please select a final option.
+                    </div>
+                </section>
+
+                <!-- Continue and Back Buttons -->
+                <div
+                    class="mx-auto px-5 max-w-[600px] mt-6 flex gap-2 sm:gap-5 justify-between items-center sm:mt-12 mb-8 sm:mb-20 text-center">
+                    <!-- Back Button -->
+                    <button type="button" id="backStep"
+                        class="w-full max-w-[266px] h-16 mx-auto sm:text-xl font-bold border-4 border-secondaryColor text-secondaryColor hover:bg-secondaryColor hover:text-white uppercase">
+                        Back
+                    </button>
+                    <!-- Continue Button -->
+                    <button type="button" id="nextStep"
+                        class="w-full max-w-[266px] mx-auto h-16 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
+                        Continue
+                    </button>
+                </div>
+            </form>
+
+            <!-- Thank You For Complete Quiz Section -->
+            <section class="thank-you-message mx-auto w-full" id="thankYouMessage">
+                <h2
+                    class="text-xl tiny:text-2xl px-5 sm:text-[44px] sm:leading-10 font-bold text-primaryColor text-center mt-14 mb-5 vsm:mb-10">
+                    Thanks! We have received your information.
+                </h2>
+                <h3 class="font-medium px-5 text-sm tiny:text-base sm:text-xl text-center text-primaryColor/75">
+                    Here are the next steps:
+                </h3>
+                <div
+                    class="flex gap-5 my-2 px-3 tiny:px-5 text-xs tiny:text-sm items-center justify-center text-center text-primaryColor/75">
+                    <!-- Contact Us for Questions -->
+                    <span class="flex gap-1 items-center">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
+                                fill="#2A3847" />
+                        </svg>
+                        <p>Contact us for questions</p>
+                    </span>
+                    <!-- Get Your Visa -->
+                    <span class="flex gap-1 items-center">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
+                                fill="#2A3847" />
+                        </svg>
+                        <p>Get your visa</p>
+                    </span>
+                </div>
+                <button type="button" id="nextStep"
+                    class="w-64 h-16 mt-10 mb-2 sm:text-xl font-bold bg-secondaryColor text-white hover:bg-red-900 uppercase">
+                    Continue
+                </button>
+                <!-- Consent Checkbox -->
+                <div
+                    class="flex items-start text-xs px-5 justify-center mx-auto mt-2 mb-10 text-left space-x-2 text-primaryColor/75 max-w-[340px]">
+                    <input type="checkbox" id="consent" class="w-4 h-4 border-gray-300">
+                    <label for="consent" class="text-sm">
+                        I consent to having my information processed in accordance with your
+                        <a href="#" class="text-primaryColor underline">Privacy Policy</a>.
+                    </label>
+                </div>
+
+                <!-- Client Review -->
+                <div class="my-5 w-full mx-auto px-5 max-w-[720px] text-left">
+                    <article class="SFPro_font flex bg-[#F2F5F6] gap-4 text-[#231F20] p-5">
+                        <div class="flex flex-col">
+                            <div class="flex justify-between items-center">
+                                <span class="flex items-center gap-5">
+                                    <p
+                                        class="flex justify-center items-center text-sm tiny:text-base font-bold w-10 h-10 shrink-0 bg-[#F5D5D2] rounded-full">
+                                        MS</p>
+                                    <h1 class="font-bold text-sm tiny:text-lg">Michelle Stone</h1>
+                                </span>
+                                <h1 class="text-xs vsm:text-base">May 03, 2023</h1>
+                            </div>
+                            <span class="flex items-center gap-1 my-3">
+                                <img src="../assets/icons/forReviews/location.svg" alt="Location Icon" />
+                                <p class="text-black text-xs">CL</p>
+                            </span>
+                            <span class="flex items-center gap-5">
+                                <img src="../assets/icons/forHeroSection/stars.svg" alt="Stars Icon" width="94" />
+                                <img src="../assets/icons/forReviews/virified.svg" alt="Verified Icon" />
+                            </span>
+                            <h4 class="my-3 text-sm tiny:text-base">
+                                I highly recommend Jérémie and Expat.cl to assist you navigate the Chilean Immigration
+                                system. Their
+                                service is invaluable. I can't imagine attempting to go through this process myself. And
+                                I am
+                                thrilled to now be a permanent Chilean resident, thanks to Jérémie’s hard work,
+                                professionalism, and
+                                persistence!
+                            </h4>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Handbook Section -->
+                <div
+                    class="flex gap-5 justify-around items-center flex-col-reverse xl:flex-row bg-[#E6F0F7] mt-10 sm:mt-20 py-20 w-full">
+
+                    <!-- Right Section -->
+                    <aside class="px-5 xl:px-20">
+                        <!-- Rated Bar -->
+                        <div class="flex items-center gap-2 mb-5 text-left max-w-[345px] vsm:max-w-max">
+                            <img src="../assets/icons/forHeroSection/stars.svg" alt="Icon" />
+                            <span class="flex flex-wrap flex-row gap-1 items-start text-xs tiny:text-sm vsm:text-base">
+                                Rated <strong>Excellent</strong> (4.7/5) by our <strong>Clients</strong> on
+                                <span class="flex gap-1 items-center font-bold">
+                                    <img src="../assets/icons/forHeroSection/bigStar.svg" alt="Icon"
+                                        class="w-[17px] vsm:w-auto" />
+                                    Trustpilot
+                                </span>
+                            </span>
+                        </div>
+
+                        <!-- Head Titles -->
+                        <h1 class="SFPro_font text-2xl vsm:text-3xl md:text-5xl text-left max-w-[610px]">
+                            A 260-page handbook to help you <strong>Relocate to Chile?</strong>
+                        </h1>
+                        <h2
+                            class="text-base vsm::text-xl text-primaryColor/75 max-w-full md:max-w-[597px] font-medium my-3 md:my-[30px] text-left">
+                            Moving abroad is not only about immigration. Do you want a complete guide with tips about
+                            health
+                            insurance, finance, accommodation, international schools...? I wrote it!
+                        </h2>
+
+                        <button
+                            class="SFPro_font flex items-center max-w-[580px] text-white justify-center gap-1 w-full h-[70px] bg-secondaryColor sm:text-[22px] font-bold mt-10 mb-7">
+                            I want to know more
+                            <img src="../assets/icons/forHeroSection/arrow.svg" alt="Arrow Icon" />
+                        </button>
+
+                        <!-- Client Review Section -->
+                        <article
+                            class="Helvetic_font text-left flex flex-col max-w-[780px] gap-3 bg-white text-[#231F20] p-2 tiny:p-5">
+                            <img src="../assets/icons/forHeroSection/stars.svg" alt="Stars Icon" width="94" />
+                            <h4 class="text-sm tiny:text-base">This isn’t a scam. After reading through the 1st lesson,
+                                I will have to say it was VERY
+                                thorough and
+                                well written. I plan to order the rest of Jeremie’s materials.</h4>
+                            <div class="flex items-center gap-3">
+                                <strong>Renae</strong>
+                                <p class="flex items-center gap-1 text-sm">
+                                    <img src="../assets/icons/forHeroSection/verified.svg"
+                                        alt="Verified Icon" />Verified
+                                </p>
+                            </div>
+                        </article>
+                    </aside>
+
+                    <!-- Image Section -->
+                    <aside>
+                        <img src="../assets/images/handbook/book.png" alt="Handbook Image" class="w-full" />
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer for desktop -->
+    <footer class="SFPro_font bg-primaryColor text-white hidden md:flex justify-around items-center z-40 mt-auto">
+        <h3>Copyright © 2016-2024 Expat.cl.</h3>
+        <img src="../assets/images/FooterLogo.png" class="my-10" alt="Logo" />
+        <nav class="flex items-center gap-2 lg:gap-9">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+        </nav>
+    </footer>
+
+    <!-- Footer for mobile -->
+    <footer
+        class="flex md:hidden text-sm tiny:text-base SFPro_font bg-primaryColor text-white flex-col items-center p-4 mt-auto">
+        <img src="../assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
+        <nav class="flex items-center gap-4 my-5 text-sm">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Use</a>
+        </nav>
+        <h3 class="text-center text-sm">Copyright © 2016-2024 Expat.cl.</h3>
+    </footer>
+
+</body>
+
+<script src="../scripts/quiz-handler.js"></script>
+
+</html>

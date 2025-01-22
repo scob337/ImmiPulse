@@ -1,0 +1,23 @@
+/* Import custom fonts */
+@import url("./fonts");
+
+/* Tailwind CSS Base, Components, and Utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: 1px solid red;
+}
+
+/* Global Styles */
+body {
+  font-family: "Figtree", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
