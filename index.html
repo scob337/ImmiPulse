@@ -4,21 +4,101 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="./assets/images/Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/Logo.svg" />
     <link href="./styles/output.css" rel="stylesheet" />
-    <title>immi pulse</title>
+    <title>Immi Pulse</title>
 </head>
 
 <body>
-
+    <!-- Header Section -->
     <header class="flex justify-between items-center py-6 mx-32 border-b">
-        <img src="./assets/images/Logo.svg" alt="">
-        <button class="px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">
-            Join EmailList
-        </button>
+        <img src="./assets/images/Logo.svg" alt="Logo">
+        <button class="px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">Join EmailList</button>
     </header>
 
+    <!-- Hero Section -->
+    <main class="flex ml-32">
+        <section class="w-full max-w-[580px] text-[#1B2A34] mt-24">
+            <h1 class="text-5xl mb-5">Get help to <strong>manage your personal finances</strong></h1>
+            <h2>Sign up for <strong>Immi Pulse</strong> - weekly financial tips in <strong>7 minutes or less</strong>
+            </h2>
 
+            <!-- Email Subscription Form -->
+            <form class="flex justify-center items-center w-full h-[72px] mt-10 mb-6 rounded bg-white">
+                <input type="email" placeholder="Your Email Address" class="w-full h-full px-6 outline-none" required>
+                <button type="submit"
+                    class="flex-shrink-0 px-9 h-12 bg-[#4CCCCC] text-white font-bold rounded-sm m-3">Join Free</button>
+            </form>
+
+            <!-- Links to Policies -->
+            <p class="flex gap-3 text-[#6F7A81] text-sm font-medium">
+                <a href="#">Terms & Conditions</a> •
+                <a href="#">Privacy Policy</a> •
+                <a href="#">Cookies Policy</a>
+            </p>
+        </section>
+
+        <!-- Hero Image -->
+        <section>
+            <img src="./assets/images/forHome/hero.svg" alt="Hero Image" class="mt-8">
+        </section>
+    </main>
+
+    <!-- Testimonials Section -->
+    <section>
+        <div class="flex items-center justify-center gap-7">
+            <div class="h-[1px] w-full bg-[#EBEBEB] max-w-[100px]"></div>
+            <p class="text-2xl font-medium text-[#1B2A34] text-nowrap">Trusted by <strong>XXXX Readers...</strong></p>
+            <div class="h-[1px] w-full bg-[#EBEBEB]"></div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="flex items-center gap-5 overflow-clip mt-8">
+            <!-- Testimonial 1 -->
+            <article class="px-[30px] py-6 bg-white max-w-96 text-sm flex-shrink-0">
+                <p class="text-[#6F7A81]">Your last issue with the tips to reduce debt was one of the best I have read.
+                    Simple but logical. I am on my way to a life without debt. Thanks!</p>
+                <hr class="my-6">
+                <div class="flex items-center justify-between">
+                    <p>Margaret C.</p>
+                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                </div>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="px-[30px] py-6 bg-white max-w-96 text-sm flex-shrink-0">
+                <p class="text-[#6F7A81]">I enjoy a lot reading ImmiPulse newsletter. It provides very good information
+                    and tips to help me manage finances.</p>
+                <hr class="my-6">
+                <div class="flex items-center justify-between">
+                    <p>Maria V.</p>
+                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                </div>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="px-[30px] py-6 bg-white max-w-96 text-sm flex-shrink-0">
+                <p class="text-[#6F7A81]">Your tips and analysis are very helpful. I save a lot of time managing my
+                    finances.</p>
+                <hr class="my-6">
+                <div class="flex items-center justify-between">
+                    <p>Joseph L.</p>
+                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                </div>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="px-[30px] py-6 bg-white max-w-96 text-sm flex-shrink-0">
+                <p class="text-[#6F7A81]">Your last issue with the tips to reduce debt was one of the best I have read.
+                    Simple but logical. I am on my way to a life without debt. Thanks!</p>
+                <hr class="my-6">
+                <div class="flex items-center justify-between">
+                    <p>Margaret C.</p>
+                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                </div>
+            </article>
+        </div>
+    </section>
 </body>
 
 </html>

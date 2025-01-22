@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Figtree";
 
-  src: url("../assets/fonts/SFProDisplay-Medium.woff2") format("woff2");
+  src: url("../assets/fonts/Figtree-Medium.ttf") format("woff2");
 
   font-weight: 500;
 
@@ -674,9 +674,18 @@ video {
   z-index: 50;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .mx-5 {
@@ -714,9 +723,9 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mx-32 {
-  margin-left: 8rem;
-  margin-right: 8rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-1 {
@@ -755,6 +764,10 @@ video {
   margin-bottom: 10px;
 }
 
+.ml-32 {
+  margin-left: 8rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -771,6 +784,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -781,6 +798,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-auto {
@@ -815,6 +836,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -839,8 +864,16 @@ video {
   height: 70px;
 }
 
+.h-\[72px\] {
+  height: 72px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .min-h-screen {
@@ -900,6 +933,10 @@ video {
   width: 100%;
 }
 
+.max-w-96 {
+  max-width: 24rem;
+}
+
 .max-w-\[266px\] {
   max-width: 266px;
 }
@@ -950,6 +987,14 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .shrink-0 {
@@ -1085,6 +1130,10 @@ video {
   gap: 2rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1101,12 +1150,24 @@ video {
   overflow: hidden;
 }
 
+.overflow-clip {
+  overflow: clip;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .border-2 {
@@ -1159,6 +1220,11 @@ video {
 .bg-\[\#1B2A34\] {
   --tw-bg-opacity: 1;
   background-color: rgb(27 42 52 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#4CCCCC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 204 204 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#D4DCE4\] {
@@ -1217,6 +1283,15 @@ video {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-\[EBEBEB\] {
+  background-color: EBEBEB;
+}
+
+.bg-\[\#EBEBEB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 235 235 / var(--tw-bg-opacity, 1));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1253,11 +1328,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1268,9 +1338,24 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .py-10 {
@@ -1318,8 +1403,8 @@ video {
   line-height: 2rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1388,6 +1473,11 @@ video {
   line-height: 1.25;
 }
 
+.text-\[\#1B2A34\] {
+  --tw-text-opacity: 1;
+  color: rgb(27 42 52 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#231F20\] {
   --tw-text-opacity: 1;
   color: rgb(35 31 32 / var(--tw-text-opacity, 1));
@@ -1396,6 +1486,11 @@ video {
 .text-\[\#5C6773\] {
   --tw-text-opacity: 1;
   color: rgb(92 103 115 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#6F7A81\] {
+  --tw-text-opacity: 1;
+  color: rgb(111 122 129 / var(--tw-text-opacity, 1));
 }
 
 .text-black {
@@ -1435,6 +1530,11 @@ video {
   opacity: 0.3;
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1449,6 +1549,7 @@ video {
 
 body {
   font-family: "Figtree", serif;
+  background-color: #F8F8F8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
