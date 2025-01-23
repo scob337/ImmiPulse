@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* Global Styles */
@@ -30,12 +30,12 @@ html {
 
 /* FAQs Section Container */
 #faqs {
-  @apply flex justify-center items-baseline gap-5 mt-10 mx-32 text-[#1B2A34];
+  @apply xl:flex justify-center items-baseline text-left gap-5 mt-7 mx-4 md:mx-32 text-[#1B2A34];
 }
 
 /* FAQ Columns */
 #faqs>div {
-  @apply flex flex-col gap-4 w-full;
+  @apply flex flex-col gap-4 w-full mt-4;
 }
 
 /* FAQ Item Container */
@@ -45,7 +45,7 @@ html {
 
 /* FAQ Question */
 #faqs .q {
-  @apply flex justify-between items-center font-semibold cursor-pointer;
+  @apply flex justify-between gap-2 items-center font-semibold cursor-pointer;
 }
 
 /* FAQ Answer */

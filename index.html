@@ -11,15 +11,17 @@
 
 <body>
     <!-- Header Section -->
-    <header class="flex justify-between items-center py-6 mx-32 border-b">
-        <img src="./assets/images/Logo.svg" alt="Logo">
-        <button class="px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">Join EmailList</button>
+    <header class="flex justify-between items-center py-6 mx-4 xl:mx-32 border-b">
+        <img src="./assets/images/Logo.svg" alt="Logo" class="w-40 sm:w-auto">
+        <button class="px-4 tiny:px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">
+            Join EmailList
+        </button>
     </header>
 
     <!-- Hero Section -->
-    <main class="flex ml-32">
+    <main class="flex ml-4 xl:ml-32">
         <section class="w-full max-w-[580px] text-[#1B2A34] mt-24">
-            <h1 class="text-5xl mb-5">Get help to <strong>manage your personal finances</strong></h1>
+            <h1 class="text-4xl lg:text-5xl mb-5">Get help to <strong>manage your personal finances</strong></h1>
             <h2>Sign up for <strong>ImmiPulse</strong> - weekly financial tips in <strong>7 minutes or less</strong>
             </h2>
 
@@ -105,20 +107,20 @@
     </section>
 
     <!-- Section to display countries information -->
-    <section class="flex flex-col gap-8 justify-center items-center mx-32 my-20">
-        <p class="text-5xl font-medium text-[#1B2A34]">
+    <section class="flex flex-col gap-8 justify-center items-center text-center mx-4 xl:mx-32 my-16 sm:my-20">
+        <p class="text-4xl md:text-5xl font-medium text-[#1B2A34]">
             ...from <strong>XXX countries!</strong>
         </p>
         <img src="./assets/images/forHome/countries.svg" alt="World Wide Map">
     </section>
 
     <!-- Section to display reasons for joining -->
-    <section class="bg-[#4CCCCC] py-14 text-center">
-        <p class="text-5xl font-medium text-white">
+    <section class="bg-[#4CCCCC] py-14 px-4 text-center">
+        <p class="text-4xl md:text-5xl font-medium text-white">
             Why should <strong>you join?</strong>
         </p>
 
-        <div class="flex justify-center items-center gap-5 mt-12">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-5 mt-12">
             <!-- Reason 1 -->
             <article class="bg-white p-10 max-w-[380px] rounded">
                 <div class="flex w-[75px] h-[75px] bg-[#F8F8F8] rounded-full m-auto">
@@ -155,14 +157,17 @@
     </section>
 
     <!-- Section to display what users will get -->
-    <section class="flex justify-between py-24 mx-32">
-        <p class="text-5xl font-medium text-[#1B2A34]">
+    <section class="relative flex flex-col lg:flex-row justify-between py-24 px-4 xl:px-32 overflow-hidden">
+        <img src="./assets/icons/pattern/circles.svg" alt="Circles Pattern"
+            class="absolute -bottom-72 sm:-bottom-80 -rotate-90 sm:-rotate-0 left-auto sm:left-0">
+
+        <p class="text-4xl md:text-5xl font-medium text-[#1B2A34] text-center lg:text-left mb-9">
             What <strong>you'll get...</strong>
         </p>
 
-        <div class="flex flex-col justify-center items-center gap-12">
+        <div class="flex flex-col justify-center items-center gap-12 text-center sm:text-left">
             <!-- Benefit 1 -->
-            <article class="flex justify-center items-center gap-8">
+            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
                 <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
                     <img src="./assets/icons/forWhatGet/upto.svg" alt="Up-to-date information" class="m-auto">
                 </div>
@@ -175,7 +180,7 @@
             </article>
 
             <!-- Benefit 2 -->
-            <article class="flex justify-center items-center gap-8">
+            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
                 <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
                     <img src="./assets/icons/forWhatGet/checklist.svg" alt="Checklists and tools" class="m-auto">
                 </div>
@@ -188,7 +193,7 @@
             </article>
 
             <!-- Benefit 3 -->
-            <article class="flex justify-center items-center gap-8">
+            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
                 <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
                     <img src="./assets/icons/forWhatGet/alerts.svg" alt="Alerts" class="m-auto">
                 </div>
@@ -204,7 +209,7 @@
 
     <!-- FAQ Section -->
     <section class="bg-[#4CCCCC] py-14 text-center">
-        <p class="text-5xl font-medium text-white">
+        <p class="text-4xl md:text-5xl font-medium text-white">
             Any <strong>questions?</strong>
         </p>
         <p class="font-medium text-white mt-5">
@@ -362,6 +367,53 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="lg:flex justify-between gap-4 items-end text-sm bg-[#1B2A34] text-[#9CB0BD] py-16 px-4 2xl:px-32">
+        <!-- Footer Left Section: Logo and Description -->
+        <div>
+            <!-- Company Logo -->
+            <img src="./assets/images/LogoDark.svg" alt="Logo">
+
+            <!-- Company Description -->
+            <p class="my-5 max-w-[680px]">
+                ImmiPulse provides information free of charge, and strives to keep it accurate and up to date. This
+                information may be different than what you see when you visit a financial institution, service provider
+                or
+                specific product’s site. All products and services on this site are presented for informational purposes
+                only, without any warranty. ImmiPulse does not provide financial products and services and does not
+                issue
+                loans. When reviewing offers, please check the terms and conditions of each financial institution. If
+                you
+                encounter inaccuracy on ImmiPulse, please let us know using the contact form.
+            </p>
+
+            <!-- Company Address -->
+            <p>Website operated by 77Leads, 9450 Southwest Gemini Drive, Greenway, Beaverton, 97008, United States.</p>
+        </div>
+
+        <!-- Footer Right Section: Social Media Links and Legal Information -->
+        <div class="flex-shrink-0 mt-9">
+            <!-- Social Media Icons -->
+            <span class="flex gap-5 mb-10">
+                <img src="./assets/icons/forfooter/facebook.svg" alt="Facebook Logo">
+                <img src="./assets/icons/forfooter/linkedin.svg" alt="LinkedIn Logo">
+            </span>
+
+            <!-- Copyright Information -->
+            <p class="flex gap-3 text-sm font-medium mb-8">
+                Copyright © 2025 ImmiPulse / 77 Leads. <br>
+                Reproduction strictly prohibited.
+            </p>
+
+            <!-- Legal Links -->
+            <p class="flex flex-wrap gap-3 text-sm font-medium">
+                <a href="#">Terms & Conditions</a> •
+                <a href="#">Privacy Policy</a> •
+                <a href="#">Cookies Policy</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 
