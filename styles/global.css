@@ -6,12 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
 * {
-  outline: 1px solid red;
+  /* Uncomment this line for debugging: outline elements with red border */
+  /* outline: 1px solid red; */
 }
 
-/* Global Styles */
 body {
+  /* Set global font and background color, remove default margin and padding */
   font-family: "Figtree", serif;
   background-color: #F8F8F8;
   margin: 0;
@@ -20,12 +22,119 @@ body {
 }
 
 html {
+  /* Enable smooth scrolling */
   scroll-behavior: smooth;
 }
 
+/* Header Section */
+header {
+  @apply flex justify-between items-center py-6 mx-4 xl:mx-32 border-b;
+}
 
-.shdw {
+header>img {
+  @apply w-40 sm:w-auto;
+}
+
+header>button {
+  @apply px-4 tiny:px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded;
+}
+
+/* Footer Section */
+footer {
+  @apply lg:flex justify-between gap-4 items-end text-sm bg-[#1B2A34] text-[#9CB0BD] py-16 px-4 2xl:px-32;
+}
+
+/* Horizontal line style */
+.line {
+  @apply h-[1px] w-full bg-[#EBEBEB];
+}
+
+/* Testimonial Section */
+#testimonial {
+  @apply flex items-center gap-5 overflow-clip mt-8;
+}
+
+#testimonial>article {
+  @apply flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0;
   box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
+}
+
+#testimonial>article>hr {
+  @apply my-6;
+}
+
+#testimonial>article>p {
+  @apply text-[#6F7A81];
+}
+
+#testimonial>article>div {
+  @apply flex items-center justify-between;
+}
+
+/* Reasons Section */
+#reasons {
+  @apply bg-[#4CCCCC] py-14 px-4 text-center;
+}
+
+#reasons img {
+  @apply m-auto;
+}
+
+#reasons>p {
+  @apply text-4xl md:text-5xl font-medium text-white;
+}
+
+#reasons>div {
+  @apply flex flex-col lg:flex-row justify-center items-center gap-5 mt-12;
+}
+
+#reasons>div>article {
+  @apply bg-white p-10 max-w-[380px] rounded;
+}
+
+#reasons>div>article>div {
+  @apply flex w-[75px] h-[75px] bg-[#F8F8F8] rounded-full m-auto;
+}
+
+#reasons>div>article>h2 {
+  @apply text-[30px] font-semibold text-[#1B2A34] mt-[18px];
+}
+
+#reasons>div>article>p {
+  @apply text-sm text-[#6F7A81] mt-[14px];
+}
+
+/* Will Get Section */
+#will-get {
+  @apply relative flex flex-col lg:flex-row justify-between py-24 px-4 xl:px-32 overflow-hidden;
+}
+
+#will-get>img {
+  @apply absolute -bottom-72 sm:-bottom-80 -rotate-90 sm:-rotate-0 left-auto sm:left-0 -z-30;
+}
+
+#will-get>p {
+  @apply text-4xl md:text-5xl font-medium text-[#1B2A34] text-center lg:text-left mb-9;
+}
+
+#will-get>div {
+  @apply flex flex-col justify-center items-center gap-12 text-center sm:text-left;
+}
+
+#will-get article {
+  @apply flex flex-col sm:flex-row justify-center items-center gap-8;
+}
+
+#will-get article>div:first-child {
+  @apply flex w-[75px] h-[75px] bg-white rounded-full m-auto;
+}
+
+#will-get h2 {
+  @apply text-[30px] font-semibold text-[#1B2A34];
+}
+
+#will-get article p {
+  @apply text-sm text-[#6F7A81] mt-[14px];
 }
 
 /* FAQs Section Container */

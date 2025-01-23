@@ -11,16 +11,16 @@
 
 <body>
     <!-- Header Section -->
-    <header class="flex justify-between items-center py-6 mx-4 xl:mx-32 border-b">
-        <img src="./assets/images/Logo.svg" alt="Logo" class="w-40 sm:w-auto">
-        <button class="px-4 tiny:px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">
+    <header>
+        <img src="./assets/images/Logo.svg" alt="Logo">
+        <button>
             Join EmailList
         </button>
     </header>
 
     <!-- Hero Section -->
-    <main class="flex ml-4 xl:ml-32">
-        <section class="w-full max-w-[580px] text-[#1B2A34] mt-24">
+    <section class="flex ml-4 xl:ml-32">
+        <div class="w-full max-w-[580px] text-[#1B2A34] mt-24">
             <h1 class="text-4xl lg:text-5xl mb-5">Get help to <strong>manage your personal finances</strong></h1>
             <h2>Sign up for <strong>ImmiPulse</strong> - weekly financial tips in <strong>7 minutes or less</strong>
             </h2>
@@ -38,67 +38,63 @@
                 <a href="#">Privacy Policy</a> •
                 <a href="#">Cookies Policy</a>
             </p>
-        </section>
+        </div>
 
         <!-- Hero Image -->
-        <section>
+        <div>
             <img src="./assets/images/forHome/hero.svg" alt="Hero Image" class="mt-8">
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
     <section>
         <div class="flex items-center justify-center gap-7">
-            <div class="h-[1px] w-full bg-[#EBEBEB] max-w-[100px]"></div> <!-- Left Line -->
+            <div class="line max-w-[100px]"></div> <!-- Left Line -->
             <p class="text-2xl font-medium text-[#1B2A34] text-nowrap">Trusted by <strong>XXXX Readers...</strong></p>
-            <div class="h-[1px] w-full bg-[#EBEBEB]"></div> <!-- Right Line -->
+            <div class="line"></div> <!-- Right Line -->
         </div>
 
         <!-- Testimonials -->
-        <div class="flex items-center gap-5 overflow-clip mt-8">
+        <div id="testimonial">
             <!-- Testimonial 1 -->
-            <article
-                class="flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0 shdw">
-                <p class="text-[#6F7A81]">Your last issue with the tips to reduce debt was one of the best I have read.
+            <article>
+                <p>Your last issue with the tips to reduce debt was one of the best I have read.
                     Simple but logical. I am on my way to a life without debt. Thanks!</p>
-                <hr class="my-6">
-                <div class="flex items-center justify-between">
+                <hr>
+                <div>
                     <p>Margaret C.</p>
                     <img src="./assets/icons/forHero/stars.svg" alt="Rating">
                 </div>
             </article>
 
             <!-- Testimonial 2 -->
-            <article
-                class="flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0 shdw">
-                <p class="text-[#6F7A81]">I enjoy a lot reading ImmiPulse newsletter. It provides very good information
+            <article>
+                <p>I enjoy a lot reading ImmiPulse newsletter. It provides very good information
                     and tips to help me manage finances.</p>
-                <hr class="my-6">
-                <div class="flex items-center justify-between">
+                <hr>
+                <div>
                     <p>Maria V.</p>
                     <img src="./assets/icons/forHero/stars.svg" alt="Rating">
                 </div>
             </article>
 
             <!-- Testimonial 3 -->
-            <article
-                class="flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0 shdw">
-                <p class="text-[#6F7A81]">Your tips and analysis are very helpful. I save a lot of time managing my
+            <article>
+                <p>Your tips and analysis are very helpful. I save a lot of time managing my
                     finances.</p>
-                <hr class="my-6">
-                <div class="flex items-center justify-between">
+                <hr>
+                <div>
                     <p>Joseph L.</p>
                     <img src="./assets/icons/forHero/stars.svg" alt="Rating">
                 </div>
             </article>
 
             <!-- Testimonial 4 -->
-            <article
-                class="flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0 shdw">
+            <article>
                 <p class="text-[#6F7A81]">Your last issue with the tips to reduce debt was one of the best I have read.
                     Simple but logical. I am on my way to a life without debt. Thanks!</p>
-                <hr class="my-6">
-                <div class="flex items-center justify-between">
+                <hr>
+                <div>
                     <p>Margaret C.</p>
                     <img src="./assets/icons/forHero/stars.svg" alt="Rating">
                 </div>
@@ -115,41 +111,41 @@
     </section>
 
     <!-- Section to display reasons for joining -->
-    <section class="bg-[#4CCCCC] py-14 px-4 text-center">
-        <p class="text-4xl md:text-5xl font-medium text-white">
+    <section id="reasons">
+        <p>
             Why should <strong>you join?</strong>
         </p>
 
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-5 mt-12">
+        <div>
             <!-- Reason 1 -->
-            <article class="bg-white p-10 max-w-[380px] rounded">
-                <div class="flex w-[75px] h-[75px] bg-[#F8F8F8] rounded-full m-auto">
-                    <img src="./assets/icons/forWhyJoin/free.svg" alt="Always Free" class="m-auto">
+            <article>
+                <div>
+                    <img src="./assets/icons/forWhyJoin/free.svg" alt="Always Free">
                 </div>
-                <h2 class="text-[30px] font-semibold text-[#1B2A34] mt-[18px]">Always Free</h2>
-                <p class="text-sm text-[#6F7A81] mt-[14px]">
+                <h2>Always Free</h2>
+                <p>
                     A daily newsletter, absolutely free and delivered by 9am Pacific
                 </p>
             </article>
 
             <!-- Reason 2 -->
-            <article class="bg-white p-10 max-w-[380px] rounded">
-                <div class="flex w-[75px] h-[75px] bg-[#F8F8F8] rounded-full m-auto">
-                    <img src="./assets/icons/forWhyJoin/fresh.svg" alt="100% Fresh" class="m-auto">
+            <article>
+                <div>
+                    <img src="./assets/icons/forWhyJoin/fresh.svg" alt="100% Fresh">
                 </div>
-                <h2 class="text-[30px] font-semibold text-[#1B2A34] mt-[18px]">100% Fresh</h2>
-                <p class="text-sm text-[#6F7A81] mt-[14px]">
+                <h2>100% Fresh</h2>
+                <p>
                     Get the latest in startups, tech, and all things business news
                 </p>
             </article>
 
             <!-- Reason 3 -->
-            <article class="bg-white p-10 max-w-[380px] rounded">
-                <div class="flex w-[75px] h-[75px] bg-[#F8F8F8] rounded-full m-auto">
-                    <img src="./assets/icons/forWhyJoin/bullsh.svg" alt="No Bullsh*t" class="m-auto">
+            <article>
+                <div>
+                    <img src="./assets/icons/forWhyJoin/bullsh.svg" alt="No Bullsh*t">
                 </div>
-                <h2 class="text-[30px] font-semibold text-[#1B2A34] mt-[18px]">No Bullsh*t</h2>
-                <p class="text-sm text-[#6F7A81] mt-[14px]">
+                <h2>No Bullsh*t</h2>
+                <p>
                     Stories and insights you won’t find anywhere else, told straight
                 </p>
             </article>
@@ -157,49 +153,46 @@
     </section>
 
     <!-- Section to display what users will get -->
-    <section class="relative flex flex-col lg:flex-row justify-between py-24 px-4 xl:px-32 overflow-hidden">
-        <img src="./assets/icons/pattern/circles.svg" alt="Circles Pattern"
-            class="absolute -bottom-72 sm:-bottom-80 -rotate-90 sm:-rotate-0 left-auto sm:left-0">
+    <section id="will-get">
+        <img src="./assets/icons/pattern/circles.svg" alt="Circles Pattern">
 
-        <p class="text-4xl md:text-5xl font-medium text-[#1B2A34] text-center lg:text-left mb-9">
-            What <strong>you'll get...</strong>
-        </p>
+        <p>What <strong>you'll get...</strong></p>
 
-        <div class="flex flex-col justify-center items-center gap-12 text-center sm:text-left">
+        <div>
             <!-- Benefit 1 -->
-            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
-                <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
+            <article>
+                <div>
                     <img src="./assets/icons/forWhatGet/upto.svg" alt="Up-to-date information" class="m-auto">
                 </div>
                 <div>
-                    <h2 class="text-[30px] font-semibold text-[#1B2A34]">Up-to-date information</h2>
-                    <p class="text-sm text-[#6F7A81] mt-[14px]">
+                    <h2>Up-to-date information</h2>
+                    <p>
                         A daily newsletter, absolutely free and delivered by 9am Pacific
                     </p>
                 </div>
             </article>
 
             <!-- Benefit 2 -->
-            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
-                <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
+            <article>
+                <div>
                     <img src="./assets/icons/forWhatGet/checklist.svg" alt="Checklists and tools" class="m-auto">
                 </div>
                 <div>
-                    <h2 class="text-[30px] font-semibold text-[#1B2A34]">Checklists and tools</h2>
-                    <p class="text-sm text-[#6F7A81] mt-[14px]">
+                    <h2>Checklists and tools</h2>
+                    <p>
                         A daily newsletter, absolutely free and delivered by 9am Pacific
                     </p>
                 </div>
             </article>
 
             <!-- Benefit 3 -->
-            <article class="flex flex-col sm:flex-row justify-center items-center gap-8">
-                <div class="flex w-[75px] h-[75px] bg-white rounded-full m-auto">
+            <article>
+                <div>
                     <img src="./assets/icons/forWhatGet/alerts.svg" alt="Alerts" class="m-auto">
                 </div>
                 <div>
-                    <h2 class="text-[30px] font-semibold text-[#1B2A34]">Alerts</h2>
-                    <p class="text-sm text-[#6F7A81] mt-[14px]">
+                    <h2>Alerts</h2>
+                    <p>
                         A daily newsletter, absolutely free and delivered by 9am Pacific
                     </p>
                 </div>
@@ -209,9 +202,9 @@
 
     <!-- FAQ Section -->
     <section class="bg-[#4CCCCC] py-14 text-center">
-        <p class="text-4xl md:text-5xl font-medium text-white">
+        <h2 class="text-4xl md:text-5xl font-medium text-white">
             Any <strong>questions?</strong>
-        </p>
+        </h2>
         <p class="font-medium text-white mt-5">
             Find answers here...
         </p>
@@ -369,7 +362,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="lg:flex justify-between gap-4 items-end text-sm bg-[#1B2A34] text-[#9CB0BD] py-16 px-4 2xl:px-32">
+    <footer>
         <!-- Footer Left Section: Logo and Description -->
         <div>
             <!-- Company Logo -->
@@ -407,11 +400,11 @@
             </p>
 
             <!-- Legal Links -->
-            <p class="flex flex-wrap gap-3 text-sm font-medium">
+            <nav class="flex flex-wrap gap-3 text-sm font-medium">
                 <a href="#">Terms & Conditions</a> •
                 <a href="#">Privacy Policy</a> •
                 <a href="#">Cookies Policy</a>
-            </p>
+            </nav>
         </div>
     </footer>
 
