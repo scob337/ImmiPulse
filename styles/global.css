@@ -1,7 +1,7 @@
 /* Import custom fonts */
 @import url("./fonts");
 
-/* Tailwind CSS Base, Components, and Utilities */
+/* Tailwind CSS Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,6 +23,32 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .shdw {
   box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
+}
+
+/* FAQs Section Container */
+#faqs {
+  @apply flex justify-center items-baseline gap-5 mt-10 mx-32 text-[#1B2A34];
+}
+
+/* FAQ Columns */
+#faqs>div {
+  @apply flex flex-col gap-4 w-full;
+}
+
+/* FAQ Item Container */
+#faqs>div>article {
+  @apply px-6 py-4 bg-white rounded;
+}
+
+/* FAQ Question */
+#faqs .q {
+  @apply flex justify-between items-center font-semibold cursor-pointer;
+}
+
+/* FAQ Answer */
+#faqs .answer {
+  @apply text-left text-sm text-[#6F7A81] pt-4 border-t mt-4;
 }

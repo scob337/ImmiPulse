@@ -50,7 +50,7 @@
   font-style: normal;
 }
 
-/* Tailwind CSS Base, Components, and Utilities */
+/* Tailwind CSS Setup */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -737,11 +737,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -822,16 +817,16 @@ video {
   margin-top: 2rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .mt-\[14px\] {
   margin-top: 14px;
 }
 
 .mt-\[18px\] {
   margin-top: 18px;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -902,12 +897,12 @@ video {
   height: 72px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[75px\] {
   height: 75px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -954,6 +949,10 @@ video {
   width: 17px;
 }
 
+.w-\[75px\] {
+  width: 75px;
+}
+
 .w-\[88px\] {
   width: 88px;
 }
@@ -965,14 +964,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[75px\] {
-  width: 75px;
 }
 
 .max-w-96 {
@@ -1156,6 +1147,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1298,6 +1293,11 @@ video {
   background-color: rgb(245 213 210 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#F8F8F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
@@ -1332,11 +1332,6 @@ video {
 
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
-}
-
-.bg-\[\#F8F8F8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1429,6 +1424,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1464,6 +1464,10 @@ video {
   line-height: 1;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .text-\[34px\] {
   font-size: 34px;
 }
@@ -1495,10 +1499,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
 }
 
 .font-bold {
@@ -1582,10 +1582,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1625,6 +1621,64 @@ html {
 
 .shdw {
   box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
+}
+
+/* FAQs Section Container */
+
+#faqs {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(27 42 52 / var(--tw-text-opacity, 1));
+}
+
+/* FAQ Columns */
+
+#faqs>div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* FAQ Item Container */
+
+#faqs>div>article {
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* FAQ Question */
+
+#faqs .q {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+/* FAQ Answer */
+
+#faqs .answer {
+  margin-top: 1rem;
+  border-top-width: 1px;
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(111 122 129 / var(--tw-text-opacity, 1));
 }
 
 .hover\:bg-gray-100:hover {
