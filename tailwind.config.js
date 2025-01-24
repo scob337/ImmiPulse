@@ -3,9 +3,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primaryColor: "#2A3847",
-                secondaryColor: "#BC281A",
-                tertiaryColor: "#0466AF",
+                primaryColor: "#1B2A34",
+                secondaryColor: "#6F7A81",
+                tertiaryColor: "#4CCCCC",
             },
             screens: {
                 'vsm': '460px',

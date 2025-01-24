@@ -32,12 +32,12 @@ header>img {
 }
 
 header>button {
-  @apply px-4 tiny:px-8 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded;
+  @apply px-4 tiny:px-8 h-10 bg-primaryColor text-sm text-white font-semibold rounded;
 }
 
 /* Footer Section */
 footer {
-  @apply lg:flex justify-between gap-4 items-end text-sm bg-[#1B2A34] text-[#9CB0BD] py-16 px-4 2xl:px-32;
+  @apply lg:flex justify-between gap-4 items-end text-sm bg-primaryColor text-[#9CB0BD] py-16 px-4 2xl:px-32;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav {
 }
 
 #hero>div {
-  @apply w-full lg:max-w-[580px] text-[#1B2A34] lg:mt-24 p-4 pt-28 lg:pt-0 mt-60 z-40 gradient
+  @apply w-full lg:max-w-[580px] text-primaryColor lg:mt-24 p-4 pt-28 lg:pt-0 mt-60 z-40 gradient
 }
 
 #hero form {
@@ -62,7 +62,7 @@ nav {
 }
 
 #hero form>button {
-  @apply flex-shrink-0 w-full sm:w-auto px-9 h-12 bg-[#4CCCCC] text-white font-bold rounded-sm m-auto sm:m-0;
+  @apply flex-shrink-0 w-full sm:w-auto px-9 h-12 bg-tertiaryColor text-white font-bold rounded-sm m-auto sm:m-0;
 }
 
 #hero>aside {
@@ -99,7 +99,7 @@ nav {
 }
 
 #testimonial>article>p {
-  @apply text-[#6F7A81] mt-auto;
+  @apply text-secondaryColor mt-auto;
 }
 
 #testimonial>article>hr {
@@ -112,7 +112,7 @@ nav {
 
 /* Reasons Section */
 #reasons {
-  @apply bg-[#4CCCCC] py-14 px-4 text-center;
+  @apply bg-tertiaryColor py-14 px-4 text-center;
 }
 
 #reasons img {
@@ -136,11 +136,11 @@ nav {
 }
 
 #reasons>div>article>h2 {
-  @apply text-[30px] font-semibold text-[#1B2A34] mt-[18px];
+  @apply text-[30px] font-semibold text-primaryColor mt-[18px];
 }
 
 #reasons>div>article>p {
-  @apply text-sm text-[#6F7A81] mt-[14px];
+  @apply text-sm text-secondaryColor mt-[14px];
 }
 
 /* Will Get Section */
@@ -153,7 +153,7 @@ nav {
 }
 
 #will-get>p {
-  @apply text-4xl md:text-5xl font-medium text-[#1B2A34] text-center lg:text-left mb-9;
+  @apply text-4xl md:text-5xl font-medium text-primaryColor text-center lg:text-left mb-9;
 }
 
 #will-get>div {
@@ -169,16 +169,16 @@ nav {
 }
 
 #will-get h2 {
-  @apply text-[30px] font-semibold text-[#1B2A34];
+  @apply text-[30px] font-semibold text-primaryColor;
 }
 
 #will-get article p {
-  @apply text-sm text-[#6F7A81] mt-[14px];
+  @apply text-sm text-secondaryColor mt-[14px];
 }
 
 /* FAQs Section Container */
 #faqs {
-  @apply xl:flex justify-center items-baseline text-left gap-5 mt-7 mx-4 md:mx-32 text-[#1B2A34];
+  @apply xl:flex justify-center items-baseline text-left gap-5 mt-7 mx-4 md:mx-32 text-primaryColor;
 }
 
 /* FAQ Columns */
@@ -198,7 +198,7 @@ nav {
 
 /* FAQ Answer */
 #faqs .answer {
-  @apply text-left text-sm text-[#6F7A81] pt-4 border-t mt-4;
+  @apply text-left text-sm text-secondaryColor pt-4 border-t mt-4;
 }
 
 /* Popup Section */
@@ -220,11 +220,11 @@ nav {
 }
 
 #popup p {
-  @apply flex justify-center items-center gap-4 text-sm text-[#1B2A34]
+  @apply flex justify-center items-center gap-4 text-sm text-primaryColor
 }
 
 #popup h2 {
-  @apply text-2xl font-bold text-[#1B2A34]
+  @apply text-2xl font-bold text-primaryColor
 }
 
 #popup form {
@@ -240,7 +240,7 @@ nav {
 }
 
 #popup button {
-  @apply flex-shrink-0 w-full px-9 h-12 bg-[#4CCCCC] text-white font-bold rounded-sm m-auto
+  @apply flex-shrink-0 w-full px-9 h-12 bg-tertiaryColor text-white font-bold rounded-sm m-auto
 }
 
 #popup form {
@@ -277,7 +277,7 @@ nav {
 }
 
 #quiz>section button {
-  @apply flex ml-auto bg-[#4CCCCC] px-8 py-2 rounded text-white font-semibold
+  @apply flex ml-auto bg-tertiaryColor px-8 py-2 rounded text-white font-semibold
 }
 
 #quiz article {
@@ -289,15 +289,15 @@ nav {
 }
 
 #quiz article div.active {
-  @apply bg-[#F8FFFF] outline outline-2 outline-[#4CCCCC]
+  @apply bg-[#F8FFFF] outline outline-2 outline-tertiaryColor
 }
 
 #quiz article div>p {
-  @apply text-[13px] text-[#6F7A81] mt-1
+  @apply text-[13px] text-secondaryColor mt-1
 }
 
 #quiz nav {
-  @apply flex gap-[18px] text-sm font-medium text-[#1B2A34]
+  @apply flex gap-[18px] text-sm font-medium text-primaryColor
 }
 
 #quiz nav>p {
@@ -309,11 +309,11 @@ nav {
 }
 
 #quiz nav>p.active {
-  @apply text-[#4CCCCC];
+  @apply text-tertiaryColor;
 }
 
 #quiz nav>p.active>span {
-  @apply bg-[#4CCCCC] text-white;
+  @apply bg-tertiaryColor text-white;
 }
 
 
@@ -321,7 +321,7 @@ nav {
 /* --------------------------------------- FOR About --------------------------------------- */
 /* Top bar styling */
 #top-bar {
-  @apply flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-[#4CCCCC] px-6 py-3 text-xs;
+  @apply flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-tertiaryColor px-6 py-3 text-xs;
 }
 
 /* Paragraph styling within the top bar */
@@ -341,7 +341,7 @@ nav {
 
 /* Button styling within the top bar span */
 #top-bar>span>button {
-  @apply flex-shrink-0 w-full max-w-24 h-full bg-[#1B2A34] text-white font-semibold rounded;
+  @apply flex-shrink-0 w-full max-w-24 h-full bg-primaryColor text-white font-semibold rounded;
 }
 
 /* Hero article section styling */
@@ -366,7 +366,7 @@ nav {
 
 /* Heading 3 styling within the hero article section */
 #hero-article>h3 {
-  @apply text-sm font-medium text-[#6F7A81] mt-2;
+  @apply text-sm font-medium text-secondaryColor mt-2;
 }
 
 /* Article section styling */
