@@ -6,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../assets/images/Logo.svg">
     <link href="../styles/output.css" rel="stylesheet">
-    <title>Immi Pulse Quiz</title>
+    <title>Immi Pulse About</title>
 </head>
 
 <body>
 
     <!-- Top Bar -->
-    <div class="flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-[#4CCCCC] px-6 py-3">
+    <div id="top-bar">
         <!-- Signup Message -->
-        <p class="text-sm font-medium">
+        <p>
             Sign up for <strong>Immi</strong>Pulse - weekly financial tips in <strong>7 minutes or less</strong>
         </p>
-        <span class="flex w-full md:w-auto justify-center gap-3 flex-shrink-0">
+        <span>
             <!-- Email Input Field -->
-            <input type="email" placeholder="Enter Your Email Address"
-                class="bg-[#B1E7E7] rounded w-full vsm:w-52 px-3 py-3 vsm:text-center text-xs">
+            <input type="email" placeholder="Enter Your Email Address">
             <!-- Join Button -->
-            <button class="flex-shrink-0 w-full max-w-24 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">
-                Join Free
-            </button>
+            <button>Join Free</button>
         </span>
     </div>
 
     <!-- Header Section -->
-    <header class="flex justify-between items-center p-4">
+    <header class="border-b-0 vsm:border-b">
         <!-- Logo -->
         <img src="../assets/images/Logo.svg" alt="Logo" class="h-8">
         <!-- Button to open popup -->
@@ -39,25 +36,25 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="my-9 text-center max-w-[1210px] px-6 lg:px-32 mx-auto">
-        <p class="text-xs font-semibold bg-[#D4E8E8] rounded w-[163px] py-3 m-auto">PERSONAL FINANCE</p>
-        <h1 class="text-4xl md:text-5xl font-bold mt-4">
+    <section id="hero-article">
+        <p>PERSONAL FINANCE</p>
+        <h1>
             Newly Approved Program Allows South Africans to finally get rid of their debts.
         </h1>
-        <h2 class="mt-9 font-bold">by John Doe</h2>
-        <h3 class="text-sm font-medium text-[#6F7A81] mt-2">9:30 AM | Jun 10, 2024</h3>
+        <h2>by John Doe</h2>
+        <h3>9:30 AM | Jun 10, 2024</h3>
     </section>
 
     <!-- Main Content Section -->
-    <main class="mx-6 lg:mx-32">
+    <main id="article" class="mx-6 lg:mx-32">
         <!-- Hero Image -->
         <img src="../assets/images/forArticle/hero.png" alt="Hero Image" class="mx-auto object-cover">
 
-        <div class="flex flex-col xl:flex-row justify-between items-start gap-12 my-12">
+        <div>
             <article class="xl:max-w-[780px]">
                 <!-- Section 1: Introduction -->
                 <section>
-                    <h1 class="text-[22px] font-bold">
+                    <h1>
                         Newly available program helps South Africans to negotiate and reduce their debt level. Some
                         experience up to
                         60% decrease of their monthly repayments. Look at how much you could save today!
@@ -66,7 +63,7 @@
                         <p class="font-semibold">
                             Important notice to all South Africans - check how much you could be saving with debt relief
                             by
-                            <a href="#" class="underline">clicking here</a>
+                            <a href="#">clicking here</a>
                         </p>
 
                         <p class="my-7">Let's be honest, having Debt is not fun! The average South African has more than
@@ -78,7 +75,7 @@
                             they can handle. So, it's no surprise that people are using this new program to get out of
                             debt faster.
                         </p>
-                        <p class="my-7"><a href="#" class="underline">This newly approved program</a> could help you get
+                        <p class="my-7"><a href="#">This newly approved program</a> could help you get
                             out of debt
                             and could lower the amount of money that you have to pay back to your creditors. If you have
                             credit card
@@ -95,9 +92,9 @@
 
                 <!-- Section 2: Debt Relief Plan Benefits -->
                 <section>
-                    <h2 class="text-[22px] font-bold mb-6">
+                    <h1 class="mb-6">
                         A Debt Relief Plan Is Like Found Money
-                    </h2>
+                    </h1>
                     <div class="my-12">
                         <p class="mb-7">Once you get started on a debt relief plan, you could find yourself paying less
                             every month
@@ -106,16 +103,16 @@
                             lower interest rates, waive late fees and penalties your payments go much further to get rid
                             of your
                             actual debt.</p>
-                        <p class="my-7">By getting on a <a href="#" class="underline">debt relief plan</a>, your credit
+                        <p class="my-7">By getting on a <a href="#">debt relief plan</a>, your credit
                             card
                             balances shrink month after month and before you know it, you're out of debt.</p>
-                        <p class="my-7">Can you imagine what <a href="#" class="underline">being debt free</a> is like?
+                        <p class="my-7">Can you imagine what <a href="#">being debt free</a> is like?
                             They say
                             money doesn't buy happiness, but from all reports, being debt free allows people to live
                             better lives.
                             For example, couples who have no debt argue less, and can do more fun things with their
                             money.</p>
-                        <p class="my-7">Would you like to be one of them? Then <a href="#" class="underline">take five
+                        <p class="my-7">Would you like to be one of them? Then <a href="#">take five
                                 minutes to
                                 look into a debt relief program</a>. It costs nothing, and won't affect your credit one
                             bit. And it
@@ -125,37 +122,35 @@
 
                 <!-- Section 3: Credit Card Debt Relief -->
                 <section>
-                    <h2 class="text-[22px] font-bold mb-6">
+                    <h1 class="mb-6">
                         How to Get Relief From Credit Card Debts
-                    </h2>
+                    </h1>
                     <div class="my-12">
                         <p class="mb-7">Here's the truth about debt: Your lending company is perfectly happy with you
                             paying your
                             minimum payments. In fact, they would rather you pay month after month, year after year,
                             decade after
                             decade.</p>
-                        <p class="my-7"><a href="#" class="underline">A debt relief plan</a> can end that cycle, and
+                        <p class="my-7"><a href="#">A debt relief plan</a> can end that cycle, and
                             could save you
                             thousands of dollars as well.</p>
                         <p class="my-7">It takes only a few moments to enter your information and see what debt relief
                             plans are
-                            available to you. Best of all, it's completely free. You will <a href="#"
-                                class="underline">receive a
+                            available to you. Best of all, it's completely free. You will <a href="#">receive a
                                 free debt relief savings estimate</a>.</p>
                     </div>
                 </section>
 
                 <!-- Section 4: Savings Estimation -->
                 <section>
-                    <h2 class="text-[22px] font-bold mb-6">
+                    <h1 class="mb-6">
                         How Much You Can Save? Here's How To Find Out:
-                    </h2>
+                    </h1>
                     <div class="my-12">
                         <p class="mb-7">It's easy and takes 60 seconds or less:</p>
-                        <ul class="list-disc list-outside pl-6">
-                            <li>Step 1: Select your region below or <a href="#" class="underline">click here</a>.</li>
-                            <li>Step 2: Complete the simple form on the next page to <a href="#"
-                                    class="underline">calculate your
+                        <ul>
+                            <li>Step 1: Select your region below or <a href="#">click here</a>.</li>
+                            <li>Step 2: Complete the simple form on the next page to <a href="#">calculate your
                                     new debt amount and decrease your monthly payment.</a></li>
                         </ul>
                     </div>
@@ -175,26 +170,26 @@
             </article>
 
             <!-- Sidebar Section -->
-            <aside class="flex-shrink-0 mx-auto">
+            <aside>
                 <!-- Related Articles Section -->
-                <section class="w-full xl:max-w-[350px] bg-white px-5 md:px-[30px] py-5">
+                <section>
                     <!-- Section Title -->
                     <h4 class="font-bold">Related Articles</h4>
 
                     <!-- List of Related Articles -->
-                    <div class="flex flex-col gap-4 text-sm font-medium mt-5">
+                    <div>
                         <!-- Article 1 -->
-                        <span class="flex items-center gap-5">
+                        <span>
                             <img src="../assets/images/forArticle/related1.png" alt="Article Image">
                             Newly Approved Program Allows South Africans to finally get rid of their debts.
                         </span>
                         <!-- Article 2 -->
-                        <span class="flex items-center gap-5">
+                        <span>
                             <img src="../assets/images/forArticle/related2.png" alt="Article Image">
                             Newly Approved Program Allows South Africans to finally get rid of their debts.
                         </span>
                         <!-- Article 3 -->
-                        <span class="flex items-center gap-5">
+                        <span>
                             <img src="../assets/images/forArticle/related3.png" alt="Article Image">
                             Newly Approved Program Allows South Africans to finally get rid of their debts.
                         </span>
@@ -202,7 +197,7 @@
                 </section>
 
                 <!-- Social Media Icons Section -->
-                <section class="flex my-6 justify-center xl:justify-start">
+                <section>
                     <!-- Facebook Icon -->
                     <img src="../assets/icons/forArticles/facebook.svg" alt="Facebook Logo">
                     <!-- Instagram Icon -->

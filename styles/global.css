@@ -315,3 +315,101 @@ nav {
 #quiz nav>p.active>span {
   @apply bg-[#4CCCCC] text-white;
 }
+
+
+
+/* --------------------------------------- FOR About --------------------------------------- */
+/* Top bar styling */
+#top-bar {
+  @apply flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-[#4CCCCC] px-6 py-3 text-xs;
+}
+
+/* Paragraph styling within the top bar */
+#top-bar>p {
+  @apply text-sm font-medium md:mr-6;
+}
+
+/* Span styling within the top bar */
+#top-bar>span {
+  @apply flex w-full md:w-auto justify-center gap-3 flex-shrink-0 h-[30px];
+}
+
+/* Input field styling within the top bar span */
+#top-bar>span>input {
+  @apply bg-[#B1E7E7] rounded w-full vsm:min-w-52 max-w-80 px-3 py-3 vsm:text-center outline-none;
+}
+
+/* Button styling within the top bar span */
+#top-bar>span>button {
+  @apply flex-shrink-0 w-full max-w-24 h-full bg-[#1B2A34] text-white font-semibold rounded;
+}
+
+/* Hero article section styling */
+#hero-article {
+  @apply my-9 text-center max-w-[1210px] px-6 lg:px-32 mx-auto;
+}
+
+/* Paragraph styling within the hero article section */
+#hero-article>p {
+  @apply text-xs font-semibold bg-[#D4E8E8] rounded w-[163px] py-3 m-auto;
+}
+
+/* Heading 1 styling within the hero article section */
+#hero-article>h1 {
+  @apply text-4xl md:text-5xl font-bold mt-4;
+}
+
+/* Heading 2 styling within the hero article section */
+#hero-article>h2 {
+  @apply mt-9 font-bold;
+}
+
+/* Heading 3 styling within the hero article section */
+#hero-article>h3 {
+  @apply text-sm font-medium text-[#6F7A81] mt-2;
+}
+
+/* Article section styling */
+#article>div {
+  @apply flex flex-col xl:flex-row justify-between items-start gap-12 my-12;
+}
+
+/* Link styling within the article section */
+#article a {
+  @apply underline;
+}
+
+/* Heading 1 styling within the article section */
+#article h1 {
+  @apply text-[22px] font-bold;
+}
+
+/* Unordered list styling within the article section */
+#article ul {
+  @apply list-disc list-outside pl-6;
+}
+
+/* Sidebar styling within the article section */
+#article aside {
+  @apply flex-shrink-0 mx-auto;
+}
+
+/* First section within the sidebar */
+#article aside>section:first-child {
+  @apply w-full xl:max-w-[350px] bg-white px-5 md:px-[30px] py-5;
+}
+
+/* Last section within the sidebar */
+#article aside>section:last-child {
+  @apply flex my-6 justify-center xl:justify-start;
+}
+
+/* Div styling within the sidebar */
+#article aside div {
+  @apply flex flex-col gap-4 text-sm font-medium mt-5;
+}
+
+/* Span styling within the sidebar */
+#article aside span {
+  @apply flex items-center gap-5;
+}
