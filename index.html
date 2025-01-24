@@ -19,39 +19,59 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="flex ml-4 xl:ml-32">
-        <div class="w-full max-w-[580px] text-[#1B2A34] mt-24">
+    <section id="hero">
+        <div>
             <h1 class="text-4xl lg:text-5xl mb-5">Get help to <strong>manage your personal finances</strong></h1>
-            <h2>Sign up for <strong>ImmiPulse</strong> - weekly financial tips in <strong>7 minutes or less</strong>
+            <h2>
+                Sign up for <strong>ImmiPulse</strong> - weekly financial tips in <strong>7 minutes or less</strong>
             </h2>
 
             <!-- Email Subscription Form -->
-            <form class="flex justify-center items-center w-full h-[72px] mt-10 mb-6 rounded bg-white">
-                <input type="email" placeholder="Your Email Address" class="w-full h-full px-6 outline-none" required>
-                <button type="submit"
-                    class="flex-shrink-0 px-9 h-12 bg-[#4CCCCC] text-white font-bold rounded-sm m-3">Join Free</button>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit">Join Free</button>
             </form>
 
             <!-- Links to Policies -->
-            <p class="flex gap-3 text-[#6F7A81] text-sm font-medium">
+            <nav class="text-[#6F7A81] justify-center sm:justify-start text-xs sm:text-sm">
                 <a href="#">Terms & Conditions</a> •
                 <a href="#">Privacy Policy</a> •
                 <a href="#">Cookies Policy</a>
-            </p>
+            </nav>
         </div>
 
-        <!-- Hero Image -->
-        <div>
-            <img src="./assets/images/forHome/hero.svg" alt="Hero Image" class="mt-8">
-        </div>
+        <!-- Hero Image Container -->
+        <aside>
+            <!-- Outer Circle -->
+            <div class="w-[470px] h-[470px] bg-[#EFF6F6]">
+                <!-- First Inner Circle -->
+                <div class="w-[366px] h-[366px] bg-[#4ccccc0d] border border-[#4ccccc33]">
+                    <!-- Second Inner Circle -->
+                    <div class="w-[228px] h-[228px] bg-[#4ccccc0d] border border-[#4ccccc33]">
+                        <!-- Third Inner Circle -->
+                        <div class="w-[100px] h-[100px] bg-[#4ccccc1a] z-40">
+                            <!-- Center Circle -->
+                            <div class="w-[46px] h-[46px] bg-[#4CCCCC] z-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <img src="./assets/images/forHome/hero.png" alt="Hero Image" class="right-32 top-2">
+            <!-- Additional Icons -->
+            <img src="./assets/icons/forHero/signal.svg" alt="Signal Icon" class="right-10 top-10">
+            <img src="./assets/icons/forHero/global.svg" alt="Global Icon" class="right-28 top-64 lg:top-[360px]">
+            <img src="./assets/icons/forHero/article.svg" alt="Article Icon" class="top-24">
+        </aside>
+
     </section>
 
     <!-- Testimonials Section -->
     <section>
-        <div class="flex items-center justify-center gap-7">
-            <div class="line max-w-[100px]"></div> <!-- Left Line -->
+        <div class="flex items-center justify-center gap-7 mt-14">
+            <span class="line max-w-[100px]"></span> <!-- Left Line -->
             <p class="text-2xl font-medium text-[#1B2A34] text-nowrap">Trusted by <strong>XXXX Readers...</strong></p>
-            <div class="line"></div> <!-- Right Line -->
+            <span class="line"></span> <!-- Right Line -->
         </div>
 
         <!-- Testimonials -->
@@ -400,7 +420,7 @@
             </p>
 
             <!-- Legal Links -->
-            <nav class="flex flex-wrap gap-3 text-sm font-medium">
+            <nav>
                 <a href="#">Terms & Conditions</a> •
                 <a href="#">Privacy Policy</a> •
                 <a href="#">Cookies Policy</a>

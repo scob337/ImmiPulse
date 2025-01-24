@@ -6,12 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Styles */
 * {
-  /* Uncomment this line for debugging: outline elements with red border */
   /* outline: 1px solid red; */
 }
 
+/* Global Styles */
 body {
   /* Set global font and background color, remove default margin and padding */
   font-family: "Figtree", serif;
@@ -44,9 +43,52 @@ footer {
   @apply lg:flex justify-between gap-4 items-end text-sm bg-[#1B2A34] text-[#9CB0BD] py-16 px-4 2xl:px-32;
 }
 
+nav {
+  @apply flex flex-wrap gap-3 text-sm font-medium;
+}
+
+/* Hero Section */
+#hero {
+  @apply relative flex flex-col-reverse lg:flex-row lg:gap-16 items-center lg:items-start justify-between xl:ml-32 xl:mr-12 my-7 overflow-hidden sm:overflow-visible
+}
+
+#hero>div {
+  @apply w-full lg:max-w-[580px] text-[#1B2A34] lg:mt-24 p-4 pt-28 lg:pt-0 mt-60 z-50 gradient
+}
+
+#hero form {
+  @apply sm:flex justify-center px-3 pb-4 sm:pb-0 items-center w-full sm:h-[72px] mt-10 mb-6 rounded bg-white
+}
+
+#hero form>input {
+  @apply w-full h-full p-4 outline-none text-center sm:text-left
+}
+
+#hero form>button {
+  @apply flex-shrink-0 w-full sm:w-auto px-9 h-12 bg-[#4CCCCC] text-white font-bold rounded-sm m-auto sm:m-0
+}
+
+#hero>aside {
+  @apply -right-28 sm:-right-0 absolute lg:relative top-0 w-fit
+}
+
+#hero>aside div {
+  @apply flex justify-center items-center rounded-full flex-shrink-0;
+}
+
+#hero>aside>img {
+  @apply absolute rounded;
+}
+
+@media (max-width: 1024px) {
+  .gradient {
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0.00) 0.06%, #F8F8F8 19.53%);
+  }
+}
+
 /* Horizontal line style */
 .line {
-  @apply h-[1px] w-full bg-[#EBEBEB];
+  @apply h-[1px] w-full bg-[#EBEBEB] hidden sm:block;
 }
 
 /* Testimonial Section */
