@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* outline: 1px solid red; */
-}
-
 /* Global Styles */
 body {
   /* Set global font and background color, remove default margin and padding */

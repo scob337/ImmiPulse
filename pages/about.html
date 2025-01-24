@@ -4,443 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Need help moving to Chile? Our team of experts can assist you with home searches, school searches, visas, immigration, and temporary accommodation. Learn more about our services.">
-    <link rel="icon" type="image/png" href="../assets/images/symbol.png" />
-    <link href="../styles/output.css" rel="stylesheet" />
-    <link href="../styles/global.css" rel="stylesheet" />
-    <link href="../styles/custom.css" rel="stylesheet" />
-    <title>Expat.cl About Us</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo.svg">
+    <link href="../styles/output.css" rel="stylesheet">
+    <title>Immi Pulse Quiz</title>
 </head>
 
 <body>
-    <header class="flex flex-col">
-        <!-- Top bar -->
-        <div class="SFPro_font bg-primaryColor text-white text-xs font-normal uppercase marquee-container">
-            <div class="animate-marquee  gap-8 justify-around">
-                <div class="marquee-item flex items-center gap-1">
-                    <img src="../assets/icons/forHeader/temporary.svg" alt="Icon" />
-                    <h3>Temporary Accommodation</h3>
-                </div>
-                <div class="marquee-item flex items-center gap-1">
-                    <img src="../assets/icons/forHeader/response.svg" alt="Icon" />
-                    <h3>Get responses in 24hrs</h3>
-                </div>
-                <div class="marquee-item flex items-center gap-1">
-                    <img src="../assets/icons/forHeader/support.svg" alt="Icon" />
-                    <h3>Expat Support</h3>
-                </div>
-                <div class="marquee-item flex items-center gap-1">
-                    <img src="../assets/icons/forHeader/tailor.svg" alt="Icon" />
-                    <h3>Tailor-Made</h3>
-                </div>
-                <!-- Repeat content for seamless loop -->
-                <span class="flex gap-8 sm:hidden">
-                    <div class="marquee-item flex items-center gap-1">
-                        <img src="../assets/icons/forHeader/temporary.svg" alt="Icon" />
-                        <h3>Temporary Accommodation</h3>
-                    </div>
-                    <div class="marquee-item flex items-center gap-1">
-                        <img src="../assets/icons/forHeader/response.svg" alt="Icon" />
-                        <h3>Get responses in 24hrs</h3>
-                    </div>
-                    <div class="marquee-item flex items-center gap-1">
-                        <img src="../assets/icons/forHeader/support.svg" alt="Icon" />
-                        <h3>Expat Support</h3>
-                    </div>
-                    <div class="marquee-item flex items-center gap-1">
-                        <img src="../assets/icons/forHeader/tailor.svg" alt="Icon" />
-                        <h3>Tailor-Made</h3>
-                    </div>
-                </span>
-            </div>
-        </div>
 
-        <!-- Main header & navigation -->
-        <div class="flex justify-between items-center h-[70px] px-4 lg:px-24">
-            <img src="../assets/images/Logo.png" alt="Logo" class="h-10" />
-            <nav class="SFPro_font hidden lg:flex gap-10 xl:gap-16 text-sm font-medium text-primaryColor">
-                <a href="#how-it-works">How it works</a>
-                <a href="#about-expat.cl">About Expat.cl</a>
-                <a href="#move-to-chile">Move to Chile</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#have-questions">FAQ’s</a>
-            </nav>
-            <button id="burgerMenu" class="lg:hidden flex flex-col gap-1.5" aria-label="Open menu">
-                <span class="block w-6 h-0.5 bg-primaryColor"></span>
-                <span class="block w-6 h-0.5 bg-primaryColor"></span>
-                <span class="block w-6 h-0.5 bg-primaryColor"></span>
+    <!-- Top Bar -->
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-[#4CCCCC] px-6 py-3">
+        <!-- Signup Message -->
+        <p class="text-sm font-medium">
+            Sign up for <strong>Immi</strong>Pulse - weekly financial tips in <strong>7 minutes or less</strong>
+        </p>
+        <span class="flex w-full md:w-auto justify-center gap-3 flex-shrink-0">
+            <!-- Email Input Field -->
+            <input type="email" placeholder="Enter Your Email Address"
+                class="bg-[#B1E7E7] rounded w-full vsm:w-52 px-3 py-3 vsm:text-center text-xs">
+            <!-- Join Button -->
+            <button class="flex-shrink-0 w-full max-w-24 h-10 bg-[#1B2A34] text-sm text-white font-semibold rounded">
+                Join Free
             </button>
-        </div>
-        <nav id="mobileNav"
-            class="SFPro_font fixed inset-0 flex text-lg flex-col items-center text-center justify-center gap-4 font-medium text-primaryColor bg-white/90 transform translate-x-full transition-transform lg:hidden z-50">
-            <div class="absolute top-20 right-4">
-                <button id="closeMenu" class="flex flex-col gap-1.5" aria-label="Close menu">
-                    <span class="block w-6 h-0.5 bg-primaryColor rotate-45 translate-y-1"></span>
-                    <span class="block w-6 h-0.5 bg-primaryColor -rotate-45 -translate-y-1"></span>
-                </button>
-            </div>
-            <a href="#how-it-works" class="w-full py-2 hover:bg-gray-100">How it works</a>
-            <a href="#about-expat.cl" class="w-full py-2 hover:bg-gray-100">About Expat.cl</a>
-            <a href="#move-to-chile" class="w-full py-2 hover:bg-gray-100">Move to Chile</a>
-            <a href="#reviews" class="w-full py-2 hover:bg-gray-100">Reviews</a>
-            <a href="#have-questions" class="w-full py-2 hover:bg-gray-100">FAQ’s</a>
-        </nav>
+        </span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="flex justify-between items-center p-4">
+        <!-- Logo -->
+        <img src="../assets/images/Logo.svg" alt="Logo" class="h-8">
+        <!-- Button to open popup -->
+        <button class="hidden sm:block">Calculate New Debt Amount</button>
+        <!-- Burger Icon -->
+        <img src="../assets/icons/forArticles/burger.svg" alt="burger icon" class="sm:hidden w-6">
     </header>
 
-    <!-- Navigation Bar -->
-    <nav class="SFPro_font h-16 border-t-4 border-[#F2F5F6] grid">
-        <div class="flex items-center gap-3 ml-4 lg:ml-24">
-            <a href="../index.html" class="text-[#5C6773]">Home</a>
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L1 13" stroke="#5C6773" />
-            </svg>
-            <p class="pl-1">About</p>
-        </div>
-    </nav>
-
-    <!-- Hero Section About Website -->
-    <section class="flex flex-col sm:flex-row">
-        <!-- Left side image and quote -->
-        <div class="relative w-full sm:min-w-2/5">
-            <img src="../assets/images/for_about/hero.png" alt="About Image"
-                class="w-full h-full sm:min-w-2/5 object-cover" />
-            <!-- Quote Overlay -->
-            <blockquote
-                class="SFPro_font absolute right-6 w-[165px] vsm:w-[250px] sm:w-[310px] md:w-[377px] sm:-right-2 xl:-right-5 2xl:-right-[80px] -bottom-9 sm:bottom-8 z-40 flex flex-col bg-[#F2F5F6] p-2 sm:p-5 lg:p-8">
-                <!-- Quote Shape -->
-                <span class="flex items-center">
-                    <!-- line -->
-                    <div class="w-full h-[2px] bg-primaryColor"></div>
-                    <img src="../assets/icons/forAboutPage/quote.svg" alt="Quote Icon" class="mx-5 w-8 sm:w-auto" />
-                    <!-- line -->
-                    <div class="w-full h-[2px] bg-primaryColor"></div>
-                </span>
-                <em class="sm:text-xl lg:text-2xl font-medium text-left mt-3 mb-1 sm:mt-8 sm:mb-5">This is a really
-                    cool
-                    quote</em>
-                <p class="text-sm sm:text-base lg:text-lg text-right">Famous guy</p>
-            </blockquote>
-        </div>
-
-        <!-- Right side section -->
-        <aside
-            class="flex flex-col justify-center items-center my-12 text-center sm:text-left relative px-5 w-full text-primaryColor overflow-hidden">
-            <!-- Head titles -->
-            <h1
-                class="SFPro_font text-[34px] md:text-[44px] leading-tight w-full mt-5 sm:mt-0 sm:max-w-[597px] font-bold">
-                About Website
-            </h1>
-
-            <!-- Descriptions -->
-            <div class="SFPro_font my-5 md:my-16 flex flex-col gap-3 text-left sm:gap-8">
-                <!-- First description -->
-                <p class="md:text-lg text-primaryColor/75 max-w-[597px]">
-                    This is a small description to introduce the article. This is a small description to introduce the
-                    article. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco
-                </p>
-                <!-- Second description -->
-                <p class="md:text-lg text-primaryColor/75 max-w-[597px]">
-                    This is a small description to introduce the article. This is a small description to introduce the
-                    article. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                    aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco
-                </p>
-            </div>
-
-            <div class="flex flex-col items-center sm:items-start w-full max-w-[597px] mt-5">
-                <!-- Start the process button -->
-                <a href="../pages/quiz.html" class="w-full sm:max-w-[474px]">
-                    <button
-                        class="SFPro_font px-2 w-full max-w-[474px] flex mx-auto items-center justify-center gap-1 h-[70px] text-white bg-secondaryColor text-sm tiny:text-base md:text-[22px] font-bold mb-[10px]">
-                        Start the process
-                        <img src="../assets/icons/forHeroSection/arrow.svg" alt="Icon" />
-                    </button>
-                </a>
-
-                <!-- Rated Bar -->
-                <div class="flex items-center gap-2 text-left max-w-[345px] vsm:max-w-max">
-                    <img src="../assets/icons/forHeroSection/stars.svg" alt="Icon" />
-                    <p class="font-bold text-xs tiny:text-sm md:text-base">
-                        This service is rated 4.6/5.0 by 100+ foreigners
-                    </p>
-                </div>
-            </div>
-        </aside>
-    </section>
-
-    <!-- Who is behind Website Section -->
-    <section class="SFPro_font relative text-center md:p-8 xl:p-20 bg-[#F2F5F6]">
-
-        <!-- Background Pattern -->
-        <img src="../assets/images/patterns/pattern3.png" alt="pattern"
-            class="hidden md:block absolute right-0 top-9 scale-x-[-1] opacity-30" />
-
-        <!-- Section Title -->
-        <h1
-            class="text-primaryColor text-2xl tiny:text-[32px] md:text-[44px] font-bold py-10 md:py-0 md:mb-16 leading-[1.2]">
-            Who is behind Website?
+    <!-- Hero Section -->
+    <section class="my-9 text-center max-w-[1210px] px-6 lg:px-32 mx-auto">
+        <p class="text-xs font-semibold bg-[#D4E8E8] rounded w-[163px] py-3 m-auto">PERSONAL FINANCE</p>
+        <h1 class="text-4xl md:text-5xl font-bold mt-4">
+            Newly Approved Program Allows South Africans to finally get rid of their debts.
         </h1>
-
-        <div class="flex flex-col justify-center items-center gap-10">
-            <!-- First Person -->
-            <article class="flex flex-col md:flex-row gap-8 text-left items-center">
-                <!-- Person Image -->
-                <img src="../assets/images/founders/person1.png" alt="Founder Image" class="w-full md:w-[350px]" />
-                <div class="flex flex-col gap-3 lg:gap-5 p-5 md:p-0">
-                    <!-- Name and Social Icons -->
-                    <h2
-                        class="flex justify-between items-center text-primaryColor text-2xl md:text-4xl font-bold w-full">
-                        Name
-                        <!-- Social Icons (hidden on medium and larger screens) -->
-                        <span class="flex md:hidden gap-8">
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                        </span>
-                    </h2>
-                    <!-- Description -->
-                    <p class="text-primaryColor/75 text-sm lg:text-lg">
-                        This is a small description to introduce the article. This is a small description to introduce
-                        the
-                        article. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore
-                        magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco
-                    </p>
-
-                    <!-- Checkpoints -->
-                    <ul class="SFPro_font flex flex-col gap-2 text-xs tiny:text-base text-primaryColor/75">
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                    </ul>
-                    <!-- Social Icons (visible on medium and larger screens) -->
-                    <span class="hidden md:flex gap-8">
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-7 lg:w-auto" />
-                        </a>
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon"
-                                class="w-7 lg:w-auto" />
-                        </a>
-                    </span>
-                </div>
-            </article>
-
-            <!-- Second Person -->
-            <article class="flex flex-col md:flex-row gap-8 text-left items-center">
-                <!-- Person Image -->
-                <img src="../assets/images/founders/person2.png" alt="Founder Image" class="w-full md:w-[350px]" />
-                <div class="flex flex-col gap-3 lg:gap-5 p-5 md:p-0">
-                    <!-- Name and Social Icons -->
-                    <h2
-                        class="flex justify-between items-center text-primaryColor text-2xl md:text-4xl font-bold w-full">
-                        Name
-                        <!-- Social Icons (hidden on medium and larger screens) -->
-                        <span class="flex md:hidden gap-8">
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                        </span>
-                    </h2>
-                    <!-- Description -->
-                    <p class="text-primaryColor/75 text-sm lg:text-lg">
-                        This is a small description to introduce the article. This is a small description to introduce
-                        the
-                        article. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore
-                        magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco
-                    </p>
-
-                    <!-- Checkpoints -->
-                    <ul class="SFPro_font flex flex-col gap-2 text-xs tiny:text-base text-primaryColor/75">
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                    </ul>
-                    <!-- Social Icons (visible on medium and larger screens) -->
-                    <span class="hidden md:flex gap-8">
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-7 lg:w-auto" />
-                        </a>
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon"
-                                class="w-7 lg:w-auto" />
-                        </a>
-                    </span>
-                </div>
-            </article>
-
-            <!-- Third Person -->
-            <article class="flex flex-col md:flex-row gap-8 text-left items-center">
-                <!-- Person Image -->
-                <img src="../assets/images/founders/person3.png" alt="Founder Image" class="w-full md:w-[350px]" />
-                <div class="flex flex-col gap-3 lg:gap-5 p-5 md:p-0">
-                    <!-- Name and Social Icons -->
-                    <h2
-                        class="flex justify-between items-center text-primaryColor text-2xl md:text-4xl font-bold w-full">
-                        Name
-                        <!-- Social Icons (hidden on medium and larger screens) -->
-                        <span class="flex md:hidden gap-8">
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                            <a href="">
-                                <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon" class="w-6" />
-                            </a>
-                        </span>
-                    </h2>
-                    <!-- Description -->
-                    <p class="text-primaryColor/75 text-sm lg:text-lg">
-                        This is a small description to introduce the article. This is a small description to introduce
-                        the
-                        article. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore
-                        magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco
-                    </p>
-
-                    <!-- Checkpoints -->
-                    <ul class="SFPro_font flex flex-col gap-2 text-xs tiny:text-base text-primaryColor/75">
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.88 9.44L5.14 7.7C4.99333 7.55333 4.81333 7.48 4.6 7.48C4.38667 7.48 4.2 7.56 4.04 7.72C3.89333 7.86667 3.82 8.05333 3.82 8.28C3.82 8.50667 3.89333 8.69333 4.04 8.84L6.32 11.12C6.46667 11.2667 6.65333 11.34 6.88 11.34C7.10667 11.34 7.29333 11.2667 7.44 11.12L11.98 6.58C12.1267 6.43333 12.2 6.25333 12.2 6.04C12.2 5.82667 12.12 5.64 11.96 5.48C11.8133 5.33333 11.6267 5.26 11.4 5.26C11.1733 5.26 10.9867 5.33333 10.84 5.48L6.88 9.44ZM8 16C6.89333 16 5.85333 15.7899 4.88 15.3696C3.90667 14.9499 3.06 14.38 2.34 13.66C1.62 12.94 1.05013 12.0933 0.6304 11.12C0.210133 10.1467 0 9.10667 0 8C0 6.89333 0.210133 5.85333 0.6304 4.88C1.05013 3.90667 1.62 3.06 2.34 2.34C3.06 1.62 3.90667 1.04987 4.88 0.6296C5.85333 0.209867 6.89333 0 8 0C9.10667 0 10.1467 0.209867 11.12 0.6296C12.0933 1.04987 12.94 1.62 13.66 2.34C14.38 3.06 14.9499 3.90667 15.3696 4.88C15.7899 5.85333 16 6.89333 16 8C16 9.10667 15.7899 10.1467 15.3696 11.12C14.9499 12.0933 14.38 12.94 13.66 13.66C12.94 14.38 12.0933 14.9499 11.12 15.3696C10.1467 15.7899 9.10667 16 8 16Z"
-                                    fill="#2A3847" />
-                            </svg>
-                            <h3 class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            </h3>
-                        </li>
-                    </ul>
-                    <!-- Social Icons (visible on medium and larger screens) -->
-                    <span class="hidden md:flex gap-8">
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/x.svg" alt="Social Icon" class="w-7 lg:w-auto" />
-                        </a>
-                        <a href="">
-                            <img src="../assets/icons/forAboutPage/linkedin.svg" alt="Social Icon"
-                                class="w-7 lg:w-auto" />
-                        </a>
-                    </span>
-                </div>
-            </article>
+        <h2 class="mt-9 font-bold">by John Doe</h2>
+        <h3 class="text-sm font-medium text-[#6F7A81] mt-2">9:30 AM | Jun 10, 2024</h3>
     </section>
 
-    <!-- Footer for desktop -->
-    <footer class="SFPro_font bg-primaryColor text-white hidden md:flex justify-around items-center">
-        <h3>Copyright © 2016-2024 Expat.cl.</h3>
-        <img src="../assets/images/FooterLogo.png" class="my-10" alt="Logo" />
-        <nav class="flex items-center gap-2 lg:gap-9">
-            <a href="#" class="hover:underline">Privacy Policy</a>
-            <a href="#" class="hover:underline">Terms of Use</a>
-        </nav>
-    </footer>
+    <!-- Main Content Section -->
+    <main class="mx-6 lg:mx-32">
+        <!-- Hero Image -->
+        <img src="../assets/images/forArticle/hero.png" alt="Hero Image" class="mx-auto object-cover">
 
-    <!-- Footer for mobile -->
-    <footer
-        class="flex md:hidden text-sm tiny:text-base SFPro_font bg-primaryColor text-white flex-col items-center p-4">
-        <img src="../assets/images/FooterLogo.png" class="mt-5 w-40" alt="Logo" />
-        <nav class="flex items-center gap-4 my-5 text-sm">
-            <a href="#" class="hover:underline">Privacy Policy</a>
-            <a href="#" class="hover:underline">Terms of Use</a>
-        </nav>
-        <h3 class="text-center text-sm">Copyright © 2016-2024 Expat.cl.</h3>
+        <div class="flex flex-col xl:flex-row justify-between items-start gap-12 my-12">
+            <article class="xl:max-w-[780px]">
+                <!-- Section 1: Introduction -->
+                <section>
+                    <h1 class="text-[22px] font-bold">
+                        Newly available program helps South Africans to negotiate and reduce their debt level. Some
+                        experience up to
+                        60% decrease of their monthly repayments. Look at how much you could save today!
+                    </h1>
+                    <div class="my-12">
+                        <p class="font-semibold">
+                            Important notice to all South Africans - check how much you could be saving with debt relief
+                            by
+                            <a href="#" class="underline">clicking here</a>
+                        </p>
+
+                        <p class="my-7">Let's be honest, having Debt is not fun! The average South African has more than
+                            $45,000
+                            worth of short term loans and credit card debt alone, not including their home mortgage!
+                            That number is
+                            up by $1,000 from just one year ago! South Africans are on a dangerous path of acquiring
+                            more debt than
+                            they can handle. So, it's no surprise that people are using this new program to get out of
+                            debt faster.
+                        </p>
+                        <p class="my-7"><a href="#" class="underline">This newly approved program</a> could help you get
+                            out of debt
+                            and could lower the amount of money that you have to pay back to your creditors. If you have
+                            credit card
+                            debt, you should try to take advantage of this program ASAP.</p>
+                        <p class="my-7">With millions of South Africans living paycheck to paycheck, the time for debt
+                            relief has
+                            never been more urgent. The short term lenders and credit card companies know this. And they
+                            also know
+                            that it's better to get something - rather than little or nothing - from consumers who
+                            default on debts
+                            or declare bankruptcy</p>
+                    </div>
+                </section>
+
+                <!-- Section 2: Debt Relief Plan Benefits -->
+                <section>
+                    <h2 class="text-[22px] font-bold mb-6">
+                        A Debt Relief Plan Is Like Found Money
+                    </h2>
+                    <div class="my-12">
+                        <p class="mb-7">Once you get started on a debt relief plan, you could find yourself paying less
+                            every month
+                            - and actually getting out of debt faster! How is this possible? When credit card companies
+                            agree to
+                            lower interest rates, waive late fees and penalties your payments go much further to get rid
+                            of your
+                            actual debt.</p>
+                        <p class="my-7">By getting on a <a href="#" class="underline">debt relief plan</a>, your credit
+                            card
+                            balances shrink month after month and before you know it, you're out of debt.</p>
+                        <p class="my-7">Can you imagine what <a href="#" class="underline">being debt free</a> is like?
+                            They say
+                            money doesn't buy happiness, but from all reports, being debt free allows people to live
+                            better lives.
+                            For example, couples who have no debt argue less, and can do more fun things with their
+                            money.</p>
+                        <p class="my-7">Would you like to be one of them? Then <a href="#" class="underline">take five
+                                minutes to
+                                look into a debt relief program</a>. It costs nothing, and won't affect your credit one
+                            bit. And it
+                            could save you thousands.</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Credit Card Debt Relief -->
+                <section>
+                    <h2 class="text-[22px] font-bold mb-6">
+                        How to Get Relief From Credit Card Debts
+                    </h2>
+                    <div class="my-12">
+                        <p class="mb-7">Here's the truth about debt: Your lending company is perfectly happy with you
+                            paying your
+                            minimum payments. In fact, they would rather you pay month after month, year after year,
+                            decade after
+                            decade.</p>
+                        <p class="my-7"><a href="#" class="underline">A debt relief plan</a> can end that cycle, and
+                            could save you
+                            thousands of dollars as well.</p>
+                        <p class="my-7">It takes only a few moments to enter your information and see what debt relief
+                            plans are
+                            available to you. Best of all, it's completely free. You will <a href="#"
+                                class="underline">receive a
+                                free debt relief savings estimate</a>.</p>
+                    </div>
+                </section>
+
+                <!-- Section 4: Savings Estimation -->
+                <section>
+                    <h2 class="text-[22px] font-bold mb-6">
+                        How Much You Can Save? Here's How To Find Out:
+                    </h2>
+                    <div class="my-12">
+                        <p class="mb-7">It's easy and takes 60 seconds or less:</p>
+                        <ul class="list-disc list-outside pl-6">
+                            <li>Step 1: Select your region below or <a href="#" class="underline">click here</a>.</li>
+                            <li>Step 2: Complete the simple form on the next page to <a href="#"
+                                    class="underline">calculate your
+                                    new debt amount and decrease your monthly payment.</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 5: Regional Selection -->
+                <section class="flex flex-col md:flex-row justify-between">
+                    <div>
+                        <h2 class="text-5xl font-bold">Select Your Region:</h2>
+                        <p class="text-xs font-semibold bg-[#ECECEC] rounded w-[245px] py-3 text-center mt-9 mb-3">
+                            Calculate
+                            New Debt
+                            Amount</p>
+                    </div>
+                    <img src="../assets/images/forArticle/south-africa.png" alt="South Africa">
+                </section>
+            </article>
+
+            <!-- Sidebar Section -->
+            <aside class="flex-shrink-0 mx-auto">
+                <!-- Related Articles Section -->
+                <section class="w-full xl:max-w-[350px] bg-white px-5 md:px-[30px] py-5">
+                    <!-- Section Title -->
+                    <h4 class="font-bold">Related Articles</h4>
+
+                    <!-- List of Related Articles -->
+                    <div class="flex flex-col gap-4 text-sm font-medium mt-5">
+                        <!-- Article 1 -->
+                        <span class="flex items-center gap-5">
+                            <img src="../assets/images/forArticle/related1.png" alt="Article Image">
+                            Newly Approved Program Allows South Africans to finally get rid of their debts.
+                        </span>
+                        <!-- Article 2 -->
+                        <span class="flex items-center gap-5">
+                            <img src="../assets/images/forArticle/related2.png" alt="Article Image">
+                            Newly Approved Program Allows South Africans to finally get rid of their debts.
+                        </span>
+                        <!-- Article 3 -->
+                        <span class="flex items-center gap-5">
+                            <img src="../assets/images/forArticle/related3.png" alt="Article Image">
+                            Newly Approved Program Allows South Africans to finally get rid of their debts.
+                        </span>
+                    </div>
+                </section>
+
+                <!-- Social Media Icons Section -->
+                <section class="flex my-6 justify-center xl:justify-start">
+                    <!-- Facebook Icon -->
+                    <img src="../assets/icons/forArticles/facebook.svg" alt="Facebook Logo">
+                    <!-- Instagram Icon -->
+                    <img src="../assets/icons/forArticles/instagram.svg" alt="Instagram Logo">
+                    <!-- Twitter Icon -->
+                    <img src="../assets/icons/forArticles/twitter.svg" alt="Twitter Logo">
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <!-- Footer Left Section: Logo and Description -->
+            <img src="../assets/images/LogoDark.svg" alt="Logo">
+            <p class="my-5 max-w-[680px]">
+                ImmiPulse provides information free of charge, and strives to keep it accurate and up to date. This
+                information may be different than what you see when you visit a financial institution, service provider
+                or specific product’s site. All products and services on this site are presented for informational
+                purposes only, without any warranty. ImmiPulse does not provide financial products and services and does
+                not issue loans. When reviewing offers, please check the terms and conditions of each financial
+                institution. If you encounter inaccuracy on ImmiPulse, please let us know using the contact form.
+            </p>
+            <p>Website operated by 77Leads, 9450 Southwest Gemini Drive, Greenway, Beaverton, 97008, United States.</p>
+        </div>
+
+        <div class="flex-shrink-0 mt-9">
+            <!-- Footer Right Section: Social Media Links and Legal Information -->
+            <span class="flex gap-5 mb-10">
+                <img src="../assets/icons/forfooter/facebook.svg" alt="Facebook Logo">
+                <img src="../assets/icons/forfooter/linkedin.svg" alt="LinkedIn Logo">
+            </span>
+
+            <p class="flex gap-3 text-sm font-medium mb-8">
+                Copyright © 2025 ImmiPulse / 77 Leads. <br>
+                Reproduction strictly prohibited.
+            </p>
+
+            <!-- Legal Links -->
+            <nav>
+                <a href="#">Terms & Conditions</a> •
+                <a href="#">Privacy Policy</a> •
+                <a href="#">Cookies Policy</a>
+            </nav>
+        </div>
     </footer>
 
 </body>
-
-<script src="../scripts/header-handler.js"></script>
 
 </html>
