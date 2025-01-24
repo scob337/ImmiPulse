@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #1B2A34;
 }
 
 html {
@@ -252,4 +253,69 @@ nav {
 
 #closePopupBtn {
   @apply absolute top-6 right-6 cursor-pointer
+}
+
+
+
+/* --------------------------------------- FOR QUIZ --------------------------------------- */
+
+
+#quiz {
+  @apply flex flex-col items-center
+}
+
+#quiz>h1 {
+  @apply text-2xl sm:text-[32px] my-4 text-center max-w-[547px] mx-auto
+}
+
+#quiz>section {
+  @apply max-w-[980px] bg-white mx-4 my-9 px-4 md:px-10 py-4 sm:py-8
+}
+
+#quiz>section h2 {
+  @apply text-2xl font-bold max-w-[354px] mb-5
+}
+
+#quiz>section h3 {
+  @apply font-semibold mt-2
+}
+
+#quiz>section button {
+  @apply flex ml-auto bg-[#4CCCCC] px-8 py-2 rounded text-white font-semibold
+}
+
+#quiz article {
+  @apply grid grid-cols-2 gap-[13.5px] sm:grid-cols-3 xl:grid-cols-4 my-6
+}
+
+#quiz article div {
+  @apply border border-[#ECECEC] py-4 px-5 rounded-md
+}
+
+#quiz article div.active {
+  @apply bg-[#F8FFFF] outline outline-2 outline-[#4CCCCC]
+}
+
+#quiz article div>p {
+  @apply text-[13px] text-[#6F7A81] mt-1
+}
+
+#quiz nav {
+  @apply flex gap-[18px] text-sm font-medium text-[#1B2A34]
+}
+
+#quiz nav>p {
+  @apply flex items-center gap-2
+}
+
+#quiz nav span {
+  @apply flex justify-center items-center w-5 h-5 rounded-full bg-[#9CB0BD] text-white text-xs flex-shrink-0
+}
+
+#quiz nav>p.active {
+  @apply text-[#4CCCCC];
+}
+
+#quiz nav>p.active>span {
+  @apply bg-[#4CCCCC] text-white;
 }
