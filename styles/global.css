@@ -321,7 +321,8 @@ nav {
 /* --------------------------------------- FOR About --------------------------------------- */
 /* Top bar styling */
 #top-bar {
-  @apply flex flex-col md:flex-row gap-6 justify-center items-center text-center bg-tertiaryColor px-6 py-3 text-xs;
+  @apply flex flex-col md:flex-row gap-6 justify-center items-center text-center px-6 py-3 text-xs;
+  background: linear-gradient(90deg, #4CCCCC 0%, #56DFDF 52%, #4CCCCC 100%);
 }
 
 /* Paragraph styling within the top bar */

@@ -1932,8 +1932,6 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 204 204 / var(--tw-bg-opacity, 1));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.75rem;
@@ -1947,6 +1945,10 @@ nav {
   #top-bar {
     flex-direction: row;
   }
+}
+
+#top-bar {
+  background: linear-gradient(90deg, #4CCCCC 0%, #56DFDF 52%, #4CCCCC 100%);
 }
 
 /* Paragraph styling within the top bar */
