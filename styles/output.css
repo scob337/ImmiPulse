@@ -1318,45 +1318,47 @@ nav {
 /* Testimonial Section */
 
 #testimonial {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  overflow: clip;
+  margin-top: 2rem ;
+  display: flex ;
+  align-items: center ;
+  gap: 1.25rem ;
+  overflow: clip ;
+  position: relative ;
+
 }
 
-#testimonial>article {
-  display: flex;
-  height: 177px;
-  max-width: 24rem;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
+#testimonial .swiper-wrapper > article {
+  display: flex ;
+  height: 177px ;
+  max-width: 24rem ;
+  flex-shrink: 0 ;
+  flex-direction: column ;
+  justify-content: center ;
+  --tw-bg-opacity: 1 ;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1)) ;
+  padding-left: 30px ;
+  padding-right: 30px ;
+  font-size: 0.875rem ;
+  line-height: 1.25rem ;
+  box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03) ;
 }
 
-#testimonial>article>p {
-  margin-top: auto;
-  --tw-text-opacity: 1;
-  color: rgb(111 122 129 / var(--tw-text-opacity, 1));
+#testimonial .swiper-wrapper >article>p {
+  margin-top: auto ;
+  --tw-text-opacity: 1 ;
+  color: rgb(111 122 129 / var(--tw-text-opacity, 1)) ;
 }
 
-#testimonial>article>hr {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+#testimonial .swiper-wrapper >article>hr {
+  margin-top: 1.5rem ;
+  margin-bottom: 1.5rem ;
 }
 
-#testimonial>article>div {
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#testimonial .swiper-wrapper >article>div {
+  margin-bottom: 1.5rem ;
+  display: flex ;
+  align-items: center ;
+  justify-content: space-between ;
 }
 
 /* Reasons Section */

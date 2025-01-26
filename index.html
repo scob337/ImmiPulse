@@ -8,6 +8,10 @@
         content="ImmiPulse - Get weekly financial tips to help manage your personal finances in just 7 minutes." />
     <link rel="icon" type="image/svg+xml" href="./assets/images/Logo.svg" />
     <link href="./styles/output.css" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>immi pulse</title>
 </head>
 
@@ -117,54 +121,73 @@
             <span class="line"></span> <!-- Right Line -->
         </div>
 
+
+
         <!-- Testimonials -->
-        <div id="testimonial">
-            <!-- Testimonial 1 -->
-            <article>
-                <p>Your last issue with the tips to reduce debt was one of the best I have read.
-                    Simple but logical. I am on my way to a life without debt. Thanks!</p>
-                <hr>
-                <div>
-                    <p>Margaret C.</p>
-                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
-                </div>
-            </article>
+        <div class="swiper-container" id="testimonial">
+            <div class="swiper-wrapper mb-5">
+                <!-- Testimonial 1 -->
+                <article class="swiper-slide">
+                    <p>Your last issue with the tips to reduce debt was one of the best I have read.
+                        Simple but logical. I am on my way to a life without debt. Thanks!</p>
+                    <hr>
+                    <div>
+                        <p>Margaret C.</p>
+                        <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                    </div>
+                </article>
+    
+                <!-- Testimonial 2 -->
+                <article class="swiper-slide">
+                    <p>I enjoy a lot reading ImmiPulse newsletter. It provides very good information
+                        and tips to help me manage finances.</p>
+                    <hr>
+                    <div>
+                        <p>Maria V.</p>
+                        <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                    </div>
+                </article>
+    
+                <!-- Testimonial 3 -->
+                <article class="swiper-slide">
+                    <p>Your tips and analysis are very helpful. I save a lot of time managing my
+                        finances.</p>
+                    <hr>
+                    <div>
+                        <p>Joseph L.</p>
+                        <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                    </div>
+                </article>
+    
+                <!-- Testimonial 4 -->
+                <article class="swiper-slide">
+                    <p class="text-secondaryColor">Your last issue with the tips to reduce debt was one of the best I have
+                        read. Simple but logical. I am on my way to a life without debt. Thanks!</p>
+                    <hr>
+                    <div>
+                        <p>Margaret C.</p>
+                        <img src="./assets/icons/forHero/stars.svg" alt="Rating">
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Swiper Navigation Buttons -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination p-3"></div>
 
-            <!-- Testimonial 2 -->
-            <article>
-                <p>I enjoy a lot reading ImmiPulse newsletter. It provides very good information
-                    and tips to help me manage finances.</p>
-                <hr>
-                <div>
-                    <p>Maria V.</p>
-                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
-                </div>
-            </article>
-
-            <!-- Testimonial 3 -->
-            <article>
-                <p>Your tips and analysis are very helpful. I save a lot of time managing my
-                    finances.</p>
-                <hr>
-                <div>
-                    <p>Joseph L.</p>
-                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
-                </div>
-            </article>
-
-            <!-- Testimonial 4 -->
-            <article>
-                <p class="text-secondaryColor">Your last issue with the tips to reduce debt was one of the best I have
-                    read.
-                    Simple but logical. I am on my way to a life without debt. Thanks!</p>
-                <hr>
-                <div>
-                    <p>Margaret C.</p>
-                    <img src="./assets/icons/forHero/stars.svg" alt="Rating">
-                </div>
-            </article>
         </div>
+
+
+
+        
     </section>
+    
+
+
+
 
     <!-- Section to display countries information -->
     <section class="flex flex-col gap-8 justify-center items-center text-center mx-4 xl:mx-32 my-16 sm:my-20">
@@ -487,8 +510,33 @@
     </footer>
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./scripts/faq-handler.js"></script>
 <script src="./scripts/popup.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView:4,  // عرض 3 عناصر في المرة الواحدة
+        spaceBetween: 30,   // المسافة بين العناصر
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            240: {
+                slidesPerView: 1,  // عرض عنصر واحد في الشاشات الصغيرة
+            },
 
+            540: {
+                slidesPerView: 2,  // عرض عنصر واحد فقط في الشاشات الصغيرة
+            },
+            1024: {
+                slidesPerView: 3,  // عرض عنصرين في الشاشات المتوسطة
+            }
+        }
+    });
+</script>
 </html>
