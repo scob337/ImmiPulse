@@ -1,10 +1,10 @@
 # ImmiPulse
 
 
-# Code Sections Numbering for CSS 
+## Code Sections Numbering for CSS 
 
 
-## Global Styles
+### Global Styles
 
 | Section Name                                  | Line Number |
 |-----------------------------------------------|-------------|
@@ -13,7 +13,7 @@
 | Navigation (nav)                              | 43          |
 
 
-## Home Page (`index.html`)
+### Home Page (`index.html`)
 
 | Section Name                                  | Line Number |
 |-----------------------------------------------|-------------|
@@ -29,7 +29,7 @@
 
 
 
-## Popover (`Line 21 in index.html`)
+### Popover (`Line 21 in index.html`)
 
 | Section Name                                  | Line Number |
 |-----------------------------------------------|-------------|
@@ -37,7 +37,7 @@
 | Close Popover (#ClosePopupBtn)                | 246         |
 
 
-## Quiz Page (`quiz.html`)
+### Quiz Page (`quiz.html`)
 
 | Section Name                                  | Line Number |
 |-----------------------------------------------|-------------|
@@ -46,7 +46,7 @@
 | Quiz Describe Situation (.active)             | 288         |
 
 
-## Article Page (`about.html`)
+### Article Page (`about.html`)
 
 | Section Name                                  | Line Number |
 |-----------------------------------------------|-------------|
@@ -56,7 +56,7 @@
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```
 └── 📁ImmiPulse
