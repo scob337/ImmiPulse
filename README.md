@@ -3,7 +3,6 @@
 
 ## Code Sections Numbering for CSS 
 
-
 ### Global Styles
 
 | Section Name                                  | Line Number |
