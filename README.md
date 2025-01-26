@@ -1,5 +1,33 @@
 # ImmiPulse
 
+---
+
+## Quick View
+
+ <table align="center">
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/ad519d44-57b1-4874-90f8-02c2b82d37cf" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/0995b88f-cdd1-4c5c-9136-93084f62349a" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/ce777eb7-7968-418b-a862-369c4db0af0a" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/8f4b995a-89a5-4390-82b0-71bdd48eb45b" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/6e718432-127a-4cc6-b70e-db3f1bad413f" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/6383112e-0599-4e8e-a868-12af0052ea65" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/8a4b13a5-de62-488f-b478-8650b2b61701" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/7fb1f1bc-6a89-46ee-960d-8e9eff0d3fc1" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img width='320px' src="https://github.com/user-attachments/assets/2c00c96f-9efa-48cd-8d16-b734a40ac092" alt="Image" /></td>
+    <td><img width='320px' src="https://github.com/user-attachments/assets/43192bef-d564-4c09-8ebf-a58cbae0360a" alt="Image" /></td>
+  </tr>
+</table>
+
+---
 
 ## Code Sections Numbering for CSS 
 
